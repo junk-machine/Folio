@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E01</color>
+    <color name="colorPrimaryDark">#800</color>
+    <color name="colorAccent">#0D2</color>
+
+    <color name="positiveChange">#0D2</color>
+    <color name="noChange">#999</color>
+    <color name="negativeChange">#E01</color>
+
+    <color name="dragAccepted">#0F0</color>
+
+    <color name="detailsTileBackground">#A000</color>
+
+    <color name="widgetBackgroundMask">#DFFF</color>
+    <color name="widgetBackground">#000</color>
+    <color name="widgetTitle">#B3FFFFFF</color>
+    <color name="widgetValue">#FFF</color>
+</resources>

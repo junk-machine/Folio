@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LevelStripes">
+        <attr name="stripeWidth" format="dimension"/>
+        <attr name="stripeMargin" format="dimension"/>
+
+        <attr name="positiveChangeColor" format="color"/>
+        <attr name="noChangeColor" format="color"/>
+        <attr name="negativeChangeColor" format="color"/>
+    </declare-styleable>
+</resources>

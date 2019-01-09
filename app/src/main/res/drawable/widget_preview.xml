@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:autoMirrored="true">
+
+    <item>
+        <shape>
+            <size android:width="80dp" android:height="40dp" />
+            <corners android:radius="@dimen/widget_corner_radius" />
+            <solid android:color="@color/widgetBackground"/>
+        </shape>
+    </item>
+
+    <item android:width="@dimen/widget_corner_radius">
+        <shape>
+            <corners
+                android:topLeftRadius="@dimen/widget_corner_radius"
+                android:bottomLeftRadius="@dimen/widget_corner_radius" />
+            <gradient
+                android:startColor="@color/negativeChange"
+                android:endColor="@color/positiveChange"
+                android:angle="90" />
+        </shape>
+    </item>
+
+    <item
+        android:top="5dp"
+        android:left="10dp"
+        android:right="5dp"
+        android:height="7dp">
+
+        <inset>
+            <shape>
+                <gradient
+                    android:startColor="@color/noChange"
+                    android:endColor="@color/widgetBackground"/>
+            </shape>
+        </inset>
+    </item>
+
+    <item
+        android:top="17dp"
+        android:left="50dp"
+        android:right="5dp"
+        android:height="7dp">
+
+        <inset>
+            <shape>
+                <gradient
+                    android:startColor="@color/widgetBackground"
+                    android:endColor="@color/noChange" />
+            </shape>
+        </inset>
+    </item>
+
+    <item
+        android:top="28dp"
+        android:left="40dp"
+        android:right="5dp"
+        android:height="7dp">
+
+        <inset>
+            <shape>
+                <gradient
+                    android:startColor="@color/widgetBackground"
+                    android:endColor="@color/noChange" />
+            </shape>
+        </inset>
+    </item>
+</layer-list>

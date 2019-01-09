@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:paddingEnd="@dimen/list_item_content_padding_horizontal"
+    android:background="@drawable/group_item_bg">
+
+    <ru.nahk.folio.controls.LevelStripes
+        android:id="@+id/position_level_stripes"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        style="@style/LevelStripes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/stripes_control_margin_vertical"
+        android:layout_marginBottom="@dimen/stripes_control_margin_vertical"
+        android:layout_marginStart="@dimen/stripes_control_margin_start" />
+
+    <ImageView
+        android:id="@+id/group_state_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/group_state"
+        android:contentDescription="@string/group_state_icon_description"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/position_level_stripes"
+        android:layout_marginStart="@dimen/list_item_content_padding_horizontal" />
+
+    <TextView
+        android:id="@+id/position_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/ListItem.ItemTitle"
+        android:textAlignment="viewStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/group_state_icon"
+        app:layout_constraintEnd_toStartOf="@+id/prices_barrier"
+        android:layout_marginStart="@dimen/group_state_icon_margin"
+        android:layout_marginEnd="@dimen/prices_barrier_margin" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/prices_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="position_current_value, position_value_change"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/position_current_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/position_value_change"
+        android:textAppearance="@style/TextAppearance.ListItem.Value" />
+
+    <TextView
+        android:id="@+id/position_value_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/position_current_value"
+        app:layout_constraintTop_toBottomOf="@+id/position_current_value"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <View
+        android:id="@+id/drag_target_tint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dragAccepted"
+        android:alpha="0"/>
+
+</android.support.constraint.ConstraintLayout>

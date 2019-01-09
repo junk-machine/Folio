@@ -1,0 +1,351 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "71692c59c8ee2069553a3ed8c5aafa52",
+    "entities": [
+      {
+        "tableName": "symbols",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL COLLATE NOCASE, `display_name` TEXT, `open_price` INTEGER, `open_time` INTEGER, `latest_price` INTEGER, `latest_time` INTEGER, `close_price` INTEGER, `close_time` INTEGER, `extended_price` INTEGER, `extended_time` INTEGER, `previous_close_price` INTEGER, `day_high` INTEGER, `day_low` INTEGER, `week_52_high` INTEGER, `week_52_low` INTEGER, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "displayName",
+            "columnName": "display_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "openPrice",
+            "columnName": "open_price",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "openTime",
+            "columnName": "open_time",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "latestPrice",
+            "columnName": "latest_price",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "latestTime",
+            "columnName": "latest_time",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "closePrice",
+            "columnName": "close_price",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "closeTime",
+            "columnName": "close_time",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "extendedPrice",
+            "columnName": "extended_price",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "extendedTime",
+            "columnName": "extended_time",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "previousClosePrice",
+            "columnName": "previous_close_price",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dayHigh",
+            "columnName": "day_high",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dayLow",
+            "columnName": "day_low",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "week52High",
+            "columnName": "week_52_high",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "week52Low",
+            "columnName": "week_52_low",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "lots",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `position_id` INTEGER NOT NULL, `quantity` INTEGER NOT NULL, `purchase_price` INTEGER NOT NULL, `purchase_date` INTEGER NOT NULL, `commission` INTEGER NOT NULL, FOREIGN KEY(`position_id`) REFERENCES `positions`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "positionId",
+            "columnName": "position_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "quantity",
+            "columnName": "quantity",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "purchasePrice",
+            "columnName": "purchase_price",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "purchaseDate",
+            "columnName": "purchase_date",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "commission",
+            "columnName": "commission",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_lots_position_id",
+            "unique": false,
+            "columnNames": [
+              "position_id"
+            ],
+            "createSql": "CREATE  INDEX `index_lots_position_id` ON `${TABLE_NAME}` (`position_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "positions",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "position_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "positions",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `parent_group_id` INTEGER NOT NULL, `symbol_id` TEXT NOT NULL COLLATE NOCASE, FOREIGN KEY(`parent_group_id`) REFERENCES `groups`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE , FOREIGN KEY(`symbol_id`) REFERENCES `symbols`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "parentGroupId",
+            "columnName": "parent_group_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "symbolId",
+            "columnName": "symbol_id",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_positions_parent_group_id",
+            "unique": false,
+            "columnNames": [
+              "parent_group_id"
+            ],
+            "createSql": "CREATE  INDEX `index_positions_parent_group_id` ON `${TABLE_NAME}` (`parent_group_id`)"
+          },
+          {
+            "name": "index_positions_symbol_id",
+            "unique": false,
+            "columnNames": [
+              "symbol_id"
+            ],
+            "createSql": "CREATE  INDEX `index_positions_symbol_id` ON `${TABLE_NAME}` (`symbol_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "groups",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "parent_group_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "symbols",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "symbol_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "groups",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `is_expanded` INTEGER NOT NULL, `parent_group_id` INTEGER, FOREIGN KEY(`parent_group_id`) REFERENCES `groups`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isExpanded",
+            "columnName": "is_expanded",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "parentGroupId",
+            "columnName": "parent_group_id",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_groups_parent_group_id",
+            "unique": false,
+            "columnNames": [
+              "parent_group_id"
+            ],
+            "createSql": "CREATE  INDEX `index_groups_parent_group_id` ON `${TABLE_NAME}` (`parent_group_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "groups",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "parent_group_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "portfolio_item_widgets",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `item_type` INTEGER NOT NULL, `item_id` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "itemType",
+            "columnName": "item_type",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "itemId",
+            "columnName": "item_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"71692c59c8ee2069553a3ed8c5aafa52\")"
+    ]
+  }
+}

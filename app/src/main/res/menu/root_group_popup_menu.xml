@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/add_actions_group">
+        <item
+            android:id="@+id/add_group"
+            android:title="@string/action_add_group" />
+
+        <item
+            android:id="@+id/add_position"
+            android:title="@string/action_add_position" />
+    </group>
+
+    <group android:id="@+id/misc_actions_group">
+        <item
+            android:id="@+id/rename_group"
+            android:title="@string/action_rename_group" />
+    </group>
+
+    <group android:id="@+id/about_actions_group">
+        <item
+            android:id="@+id/about_app"
+            android:title="@string/action_about_app" />
+    </group>
+</menu>

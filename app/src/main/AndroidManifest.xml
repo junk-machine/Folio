@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ru.nahk.folio">
+
+    <!-- To access web API -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To update widgets in the background -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label="@string/action_about_app"
+            android:parentActivityName=".activities.MainActivity"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.LotsListActivity"
+            android:parentActivityName=".activities.MainActivity"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.EditLotActivity"
+            android:parentActivityName=".activities.LotsListActivity"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LotsListActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.SymbolDetailsActivity"
+            android:parentActivityName=".activities.LotsListActivity"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.LotsListActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.PortfolioItemWidgetConfigureActivity"
+            android:label="@string/portfolio_item_widget_configuration_title">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".widgets.PortfolioItemWidgetProvider"
+            android:label="@string/portfolio_item_widget_name">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/portfolioitemwidget_info" />
+        </receiver>
+
+        <service
+            android:name=".widgets.PortfolioItemWidgetUpdateJob"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".widgets.PortfolioItemWidgetDeleteJob"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

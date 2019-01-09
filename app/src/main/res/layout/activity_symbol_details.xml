@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SymbolDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingEnd="@dimen/details_tile_margin"
+            android:paddingBottom="@dimen/details_tile_margin"
+            app:flexWrap="wrap">
+
+            <!-- Company name -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/company_name_tile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Layout.DetailsTile">
+
+                <TextView
+                    android:id="@+id/company_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/company_name"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Title"
+                    android:text="@string/company_name" />
+                <TextView
+                    android:id="@+id/company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EllipsizeTextView"
+                    android:layout_marginTop="@dimen/details_value_margin"
+                    app:layout_constraintVertical_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/company_name_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value"
+                    android:textAlignment="viewEnd" />
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- Latest price -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/latest_price_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Layout.DetailsTile"
+                app:layout_flexGrow="1">
+
+                <TextView
+                    android:id="@+id/latest_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Title"
+                    android:text="@string/latest_price" />
+                <TextView
+                    android:id="@+id/latest_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/details_value_margin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/latest_price_title"
+                    app:layout_constraintBottom_toTopOf="@+id/latest_change"
+                    app:layout_constraintVertical_bias="1"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value" />
+                <TextView
+                    android:id="@+id/latest_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/details_value_margin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/latest_price"
+                    app:layout_constraintBottom_toTopOf="@+id/latest_time"
+                    app:layout_constraintVertical_bias="0"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value.NoChange" />
+                <TextView
+                    android:id="@+id/latest_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value.Small" />
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- Extended price -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/extended_price_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Layout.DetailsTile"
+                app:layout_flexGrow="1">
+
+                <TextView
+                    android:id="@+id/extended_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Title"
+                    android:text="@string/extended_price" />
+                <TextView
+                    android:id="@+id/extended_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/details_value_margin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/extended_price_title"
+                    app:layout_constraintBottom_toTopOf="@+id/extended_change"
+                    app:layout_constraintVertical_bias="1"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value" />
+                <TextView
+                    android:id="@+id/extended_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/details_value_margin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/extended_price"
+                    app:layout_constraintBottom_toTopOf="@+id/extended_time"
+                    app:layout_constraintVertical_bias="0"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value.NoChange" />
+                <TextView
+                    android:id="@+id/extended_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value.Small" />
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- Open -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/open_price_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Layout.DetailsTile"
+                app:layout_flexGrow="1">
+
+                <TextView
+                    android:id="@+id/open_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Title"
+                    android:text="@string/open_price" />
+                <TextView
+                    android:id="@+id/open_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/details_value_margin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/open_price_title"
+                    app:layout_constraintBottom_toTopOf="@+id/open_change"
+                    app:layout_constraintVertical_bias="1"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value" />
+                <TextView
+                    android:id="@+id/open_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/details_value_margin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/open_price"
+                    app:layout_constraintBottom_toTopOf="@+id/open_time"
+                    app:layout_constraintVertical_bias="0"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value.NoChange" />
+                <TextView
+                    android:id="@+id/open_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value.Small" />
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- Close -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/close_price_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Layout.DetailsTile"
+                app:layout_flexGrow="1">
+
+                <TextView
+                    android:id="@+id/close_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Title"
+                    android:text="@string/close_price" />
+                <TextView
+                    android:id="@+id/close_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/details_value_margin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/close_price_title"
+                    app:layout_constraintBottom_toTopOf="@+id/close_change"
+                    app:layout_constraintVertical_bias="1"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value" />
+                <TextView
+                    android:id="@+id/close_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/details_value_margin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/close_price"
+                    app:layout_constraintBottom_toTopOf="@+id/close_time"
+                    app:layout_constraintVertical_bias="0"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value.NoChange" />
+                <TextView
+                    android:id="@+id/close_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value.Small" />
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- Day's range -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/day_range_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Layout.DetailsTile"
+                app:layout_flexGrow="1">
+
+                <TextView
+                    android:id="@+id/day_range_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintVertical_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/day_high"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Title"
+                    android:text="@string/day_range" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/details_hint_margin"
+                    android:layout_marginEnd="@dimen/details_hint_margin"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/day_high"
+                    app:layout_constraintEnd_toStartOf="@+id/day_high"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value.Hint"
+                    android:text="@string/detail_value_range_high" />
+                <TextView
+                    android:id="@+id/day_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/details_value_margin"
+                    app:layout_constraintVertical_chainStyle="spread_inside"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/day_range_title"
+                    app:layout_constraintBottom_toTopOf="@+id/day_low"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/details_hint_margin"
+                    android:layout_marginEnd="@dimen/details_hint_margin"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/day_low"
+                    app:layout_constraintEnd_toStartOf="@+id/day_low"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value.Hint"
+                    android:text="@string/detail_value_range_low" />
+                <TextView
+                    android:id="@+id/day_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value" />
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- 52-week range -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/week_52_range_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Layout.DetailsTile"
+                app:layout_flexGrow="1">
+
+                <TextView
+                    android:id="@+id/week_52_range_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintVertical_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/week_52_high"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Title"
+                    android:text="@string/week_52_range" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/details_hint_margin"
+                    android:layout_marginEnd="@dimen/details_hint_margin"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/week_52_high"
+                    app:layout_constraintEnd_toStartOf="@+id/week_52_high"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value.Hint"
+                    android:text="@string/detail_value_range_high" />
+                <TextView
+                    android:id="@+id/week_52_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/details_value_margin"
+                    app:layout_constraintVertical_chainStyle="spread_inside"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/week_52_range_title"
+                    app:layout_constraintBottom_toTopOf="@+id/week_52_low"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/details_hint_margin"
+                    android:layout_marginEnd="@dimen/details_hint_margin"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/week_52_low"
+                    app:layout_constraintEnd_toStartOf="@+id/week_52_low"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value.Hint"
+                    android:text="@string/detail_value_range_low" />
+                <TextView
+                    android:id="@+id/week_52_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value" />
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- Previous close -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/previous_close_price_tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Layout.DetailsTile"
+                app:layout_flexGrow="1">
+
+                <TextView
+                    android:id="@+id/previous_close_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintVertical_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/previous_close_price"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Title"
+                    android:text="@string/previous_close" />
+                <TextView
+                    android:id="@+id/previous_close_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/details_value_margin"
+                    app:layout_constraintVertical_chainStyle="spread_inside"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/previous_close_price_title"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textAppearance="@style/TextAppearance.DetailsTile.Value" />
+            </android.support.constraint.ConstraintLayout>
+        </com.google.android.flexbox.FlexboxLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

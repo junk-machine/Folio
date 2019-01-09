@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:background="@drawable/list_item_bg"
+    android:paddingEnd="@dimen/list_item_content_padding_horizontal">
+
+    <ru.nahk.folio.controls.LevelStripes
+        android:id="@+id/position_level_stripes"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        style="@style/LevelStripes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/stripes_control_margin_vertical"
+        android:layout_marginBottom="@dimen/stripes_control_margin_vertical"
+        android:layout_marginStart="@dimen/stripes_control_margin_start" />
+
+    <TextView
+        android:id="@+id/position_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/ListItem.ItemTitle"
+        android:textAlignment="viewStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/position_symbol"
+        app:layout_constraintStart_toEndOf="@+id/position_level_stripes"
+        app:layout_constraintEnd_toStartOf="@+id/position_quantity"
+        android:layout_marginStart="@dimen/list_item_content_padding_horizontal"
+        android:layout_marginEnd="@dimen/prices_barrier_margin" />
+
+    <TextView
+        android:id="@+id/position_symbol"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/ListItem.ItemDescription"
+        android:textAlignment="viewStart"
+        app:layout_constraintTop_toBottomOf="@+id/position_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/position_level_stripes"
+        app:layout_constraintEnd_toStartOf="@+id/symbol_value_change_icon"
+        android:layout_marginStart="@dimen/list_item_content_padding_horizontal"
+        android:layout_marginEnd="@dimen/prices_barrier_margin" />
+
+    <TextView
+        android:id="@+id/position_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/position_current_value"
+        app:layout_constraintEnd_toStartOf="@+id/position_current_value"
+        android:textAppearance="@style/TextAppearance.ListItem.SharesQuantity" />
+
+    <TextView
+        android:id="@+id/position_current_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/position_value_change"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="@style/TextAppearance.ListItem.Value" />
+
+    <TextView
+        android:id="@+id/position_value_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/position_current_value"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/position_current_value" />
+
+    <ImageView
+        android:id="@+id/symbol_value_change_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/symbol_value_change_icon_description"
+        app:layout_constraintTop_toTopOf="@+id/position_value_change"
+        app:layout_constraintBottom_toBottomOf="@+id/position_value_change"
+        app:layout_constraintEnd_toStartOf="@+id/position_value_change"
+        android:layout_marginTop="@dimen/value_change_icon_offset"
+        android:layout_marginEnd="@dimen/value_change_icon_margin" />
+
+</android.support.constraint.ConstraintLayout>

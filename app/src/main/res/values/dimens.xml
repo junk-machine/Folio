@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="fields_form_activity_padding">10dp</dimen>
+    <dimen name="input_margin">10dp</dimen>
+
+    <dimen name="empty_list_message_padding">30dp</dimen>
+
+    <dimen name="list_item_height">60dp</dimen>
+    <dimen name="list_item_content_padding_horizontal">5dp</dimen>
+
+    <dimen name="level_stripe_width">4dp</dimen>
+    <dimen name="level_stripe_margin">3dp</dimen>
+    <dimen name="stripes_control_margin_vertical">1.5dp</dimen>
+    <dimen name="stripes_control_margin_start">@dimen/level_stripe_margin</dimen>
+
+    <dimen name="group_state_icon_margin">3dp</dimen>
+
+    <dimen name="prices_barrier_margin">15dp</dimen>
+
+    <dimen name="value_change_icon_offset">1dp</dimen>
+    <dimen name="value_change_icon_margin">4dp</dimen>
+
+    <dimen name="autocomplete_description_margin">5dp</dimen>
+
+    <dimen name="details_tile_margin">10dp</dimen>
+    <dimen name="details_tile_padding">5dp</dimen>
+    <dimen name="details_value_margin">5dp</dimen>
+    <dimen name="details_hint_margin">5dp</dimen>
+
+    <dimen name="widget_corner_radius">6dp</dimen>
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Hides activity action bar. -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Default style for all floating action buttons -->
+    <style name="FloatingActionButton" parent="Theme.AppCompat">
+        <item name="backgroundTint">?android:attr/colorPrimary</item>
+        <item name="android:tint">?android:attr/textColorPrimary</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+    </style>
+
+    <!-- Ensures that group actions popup is pinned to the right of the screen.
+         When you slide the list item view - it physically moves it, so popup is rendered
+         from where the view is at that point. Use 2x options icon width to make sure
+         we always have popup opened from the end of the screen. -->
+    <style name="PopupMenu.GroupActions" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">48dp</item>
+    </style>
+
+    <!-- Basic style for TextView that cuts long text and adds ellipsis at the end -->
+    <style name="EllipsizeTextView">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Style for list item title TextView -->
+    <style name="ListItem.ItemTitle" parent="EllipsizeTextView">
+        <item name="android:textAppearance">@style/TextAppearance.ListItem.ItemTitle</item>
+    </style>
+
+    <!-- Text appearance for the list item title text: group name, company name, etc. -->
+    <style name="TextAppearance.ListItem.ItemTitle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <!-- Style for list item title TextView when item is collapsed -->
+    <style name="ListItem.ItemTitle.Collapsed" parent="ListItem.ItemTitle">
+        <item name="android:textAppearance">@style/TextAppearance.ListItem.ItemTitle.Collapsed</item>
+    </style>
+
+    <!-- Text appearance for the list item title text when item is collapsed -->
+    <style name="TextAppearance.ListItem.ItemTitle.Collapsed" parent="TextAppearance.ListItem.ItemTitle">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Style for list item description TextView -->
+    <style name="ListItem.ItemDescription" parent="ListItem.ItemTitle">
+        <item name="android:textAppearance">@style/TextAppearance.ListItem.ItemDescription</item>
+    </style>
+
+    <!-- Text appearance for the list item description text: stock symbol, lot purchase date, etc. -->
+    <style name="TextAppearance.ListItem.ItemDescription" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Text appearance for the list item value text -->
+    <style name="TextAppearance.ListItem.Value" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <!-- Text appearance for the list item value text when item is collapsed -->
+    <style name="TextAppearance.ListItem.Value.Collapsed" parent="TextAppearance.ListItem.Value">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Text appearance for the list item shares quantity text -->
+    <style name="TextAppearance.ListItem.SharesQuantity" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Text appearance for the list item value change text with no change -->
+    <style name="TextAppearance.ListItem.Value.NoChange" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/noChange</item>
+    </style>
+
+    <!-- Text appearance for the list item value change text with positive change -->
+    <style name="TextAppearance.ListItem.Value.Positive" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/positiveChange</item>
+    </style>
+
+    <!-- Text appearance for the list item value change text with negative change -->
+    <style name="TextAppearance.ListItem.Value.Negative" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/negativeChange</item>
+    </style>
+
+    <!-- Basic style for positions list item level stripes -->
+    <style name="LevelStripes">
+        <item name="stripeWidth">@dimen/level_stripe_width</item>
+        <item name="stripeMargin">@dimen/level_stripe_margin</item>
+        <item name="negativeChangeColor">@color/negativeChange</item>
+        <item name="noChangeColor">@color/noChange</item>
+        <item name="positiveChangeColor">@color/positiveChange</item>
+    </style>
+
+    <!-- Text appearance for the actual value of the auto-complete item -->
+    <style name="TextAppearance.AutoComplete.Value" parent="TextAppearance.AppCompat.Widget.PopupMenu.Large">
+    </style>
+
+    <!-- Style for the supplementary description of the auto-complete item -->
+    <style name="AutoComplete.Description" parent="EllipsizeTextView">
+        <item name="android:textAppearance">@style/TextAppearance.AutoComplete.Description</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="TextAppearance.AutoComplete.Description" parent="TextAppearance.AppCompat.Widget.PopupMenu.Large">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <!-- Style for symbol details tile layout -->
+    <style name="Layout.DetailsTile" parent="Theme.AppCompat">
+        <item name="android:background">@color/detailsTileBackground</item>
+        <item name="android:layout_marginStart">@dimen/details_tile_margin</item>
+        <item name="android:layout_marginTop">@dimen/details_tile_margin</item>
+        <item name="android:padding">@dimen/details_tile_padding</item>
+    </style>
+
+    <style name="TextAppearance.DetailsTile.Title" parent="TextAppearance.AppCompat.Medium">
+    </style>
+
+    <style name="TextAppearance.DetailsTile.Value" parent="TextAppearance.AppCompat.Large">
+    </style>
+
+    <style name="TextAppearance.DetailsTile.Value.Positive" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/positiveChange</item>
+    </style>
+
+    <style name="TextAppearance.DetailsTile.Value.NoChange" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/noChange</item>
+    </style>
+
+    <style name="TextAppearance.DetailsTile.Value.Negative" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/negativeChange</item>
+    </style>
+
+    <style name="TextAppearance.DetailsTile.Value.Small" parent="TextAppearance.AppCompat.Small">
+    </style>
+
+    <style name="TextAppearance.DetailsTile.Value.Hint" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Style for group/position name on the widget -->
+    <style name="Widget.Title" parent="EllipsizeTextView">
+        <item name="android:textAppearance">@style/TextAppearance.Widget.Title</item>
+    </style>
+
+    <style name="TextAppearance.Widget.Title" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/widgetTitle</item>
+    </style>
+
+    <!-- Style for current value on the widget -->
+    <style name="Widget.Value" parent="EllipsizeTextView">
+        <item name="android:textAppearance">@style/TextAppearance.Widget.Value</item>
+    </style>
+
+    <style name="TextAppearance.Widget.Value" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/widgetValue</item>
+    </style>
+</resources>

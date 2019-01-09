@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Folio</string>
+
+    <string name="portfolio_item_widget_name">Portfolio item</string>
+    <string name="portfolio_item_widget_configuration_title">Select Item for Widget</string>
+
+    <string name="app_version">version %s</string>
+    <string name="data_source_attribution">Data provided for free by &lt;a href=\'https://iextrading.com/developer\'>IEX&lt;/a>. View &lt;a href=\'https://iextrading.com/api-exhibit-a/\'>IEX\'s Terms of Use&lt;/a>.</string>
+
+    <string name="root_group_name">Folio</string>
+
+    <string name="unknown_value">\u2014</string>
+
+    <string name="group_state_icon_description">Group state</string>
+    <string name="symbol_value_change_icon_description">Stock price change</string>
+    <string name="value_change_stripe_description">Value change</string>
+
+    <string name="extended_symbol_format_splitter">" \u2022 "</string>
+
+    <plurals name="position_shares_count_format">
+        <item quantity="one">"(%d share) "</item>
+        <item quantity="other">"(%d shares) "</item>
+    </plurals>
+
+    <string name="current_value_expression_format">"%d \u00D7 %s = "</string>
+    <string name="extended_value_change_format">%s (%s)</string>
+
+    <string name="action_add_group">Add group</string>
+    <string name="action_add_position">Add position</string>
+    <string name="action_rename_group">Rename</string>
+    <string name="action_about_app">About</string>
+
+    <string name="add_group_title">New group</string>
+    <string name="rename_group_title">Rename group</string>
+    <string name="group_name_hint">Group name</string>
+    <string name="empty_group_name_error">Group name cannot be empty</string>
+
+    <string name="add_position_title">New position</string>
+    <string name="position_symbol_hint">Stock symbol</string>
+    <string name="empty_position_symbol_error">Stock symbol cannot be empty</string>
+
+    <string name="lots_list_title_format">%s lots</string>
+    <string name="no_lots">This position does not have any lots.</string>
+
+    <string name="add_lot_title_format">New %s lot</string>
+    <string name="edit_lot_title_format">Edit %s lot</string>
+
+    <string name="symbol_hint">Stock symbol</string>
+    <string name="symbol_example">AAPL, MSFT, etc.</string>
+    <string name="quantity_hint">Quantity</string>
+    <string name="purchase_price_hint">Purchase price</string>
+    <string name="purchase_date_hint">Purchase date</string>
+    <string name="commission_hint">Commission</string>
+    <string name="empty_quantity_error">Quantity cannot be empty</string>
+    <string name="empty_purchase_price_error">Purchase price cannot be empty</string>
+    <string name="empty_purchase_date_error">Purchase date cannot be empty</string>
+    <string name="empty_commission_error">Commission cannot be empty</string>
+    <string name="too_many_fraction_digits_error">No more than %d decimal places are allowed</string>
+
+    <string name="add_button">Add</string>
+    <string name="save_button">Save</string>
+
+    <plurals name="lot_shares_count_format">
+        <item quantity="one">%d share at %s</item>
+        <item quantity="other">%d shares at %s</item>
+    </plurals>
+
+    <string name="action_symbol_details">Details</string>
+    <string name="action_refresh_symbol">Refresh</string>
+
+    <string name="symbol_details_title_format">%s details</string>
+    <string name="company_name">Company Name</string>
+    <string name="open_price">Open</string>
+    <string name="close_price">Close</string>
+    <string name="latest_price">Latest</string>
+    <string name="extended_price">After Hours</string>
+    <string name="previous_close">Previous Close</string>
+    <string name="day_range">Day\'s Range</string>
+    <string name="week_52_range">52-week Range</string>
+
+    <string name="detail_value_change_format">%s (%s)</string>
+    <string name="detail_value_range_high">High</string>
+    <string name="detail_value_range_low">Low</string>
+</resources>
