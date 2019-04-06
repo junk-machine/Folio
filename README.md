@@ -1,6 +1,8 @@
 # Folio
 **Portfolio tracking. Simplified.**
 
+Get it from [Play store](https://play.google.com/store/apps/details?id=ru.nahk.folio).
+
 It was so hard to find a decent stock tracking app for Android, so I decided to create my own:
 
  * No ads
