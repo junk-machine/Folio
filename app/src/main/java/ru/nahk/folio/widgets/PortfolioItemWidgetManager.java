@@ -27,6 +27,11 @@ import ru.nahk.folio.utils.BigDecimalHelper;
  */
 public final class PortfolioItemWidgetManager {
     /**
+     * Request code for pending intent to open main activity.
+     */
+    private static final int OPEN_MAIN_ACTIVITY_REQUEST_CODE = -1;
+
+    /**
      * Refreshes specified widget view.
      * @param context Activity context.
      * @param widgetId Unique identifier of the widget.
@@ -121,7 +126,7 @@ public final class PortfolioItemWidgetManager {
                 R.id.widget_layout_root,
                 PendingIntent.getActivity(
                     context,
-                    0,
+                    OPEN_MAIN_ACTIVITY_REQUEST_CODE,
                     new Intent(context, MainActivity.class),
                     0));
         } else {

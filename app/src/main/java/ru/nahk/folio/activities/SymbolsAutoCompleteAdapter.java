@@ -176,6 +176,7 @@ final class SymbolsAutoCompleteAdapter extends BaseAdapter implements Filterable
          * @param results Filtering results.
          */
         @Override
+        @SuppressWarnings("unchecked")
         protected void publishResults(CharSequence constraint, FilterResults results) {
             //noinspection unchecked
             mSymbols = (List<SymbolInfo>) results.values;
