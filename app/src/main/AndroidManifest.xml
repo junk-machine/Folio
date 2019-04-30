@@ -22,7 +22,7 @@
             android:name=".activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
-            android:launchMode="singleTop">
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,7 +34,7 @@
             android:name=".activities.AboutActivity"
             android:label="@string/action_about_app"
             android:parentActivityName=".activities.MainActivity"
-            android:launchMode="singleTop">
+            android:launchMode="singleTask">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
@@ -43,7 +43,7 @@
         <activity
             android:name=".activities.LotsListActivity"
             android:parentActivityName=".activities.MainActivity"
-            android:launchMode="singleTop">
+            android:launchMode="singleTask">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
@@ -52,7 +52,7 @@
         <activity
             android:name=".activities.EditLotActivity"
             android:parentActivityName=".activities.LotsListActivity"
-            android:launchMode="singleTop">
+            android:launchMode="singleTask">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.LotsListActivity" />
@@ -61,7 +61,7 @@
         <activity
             android:name=".activities.SymbolDetailsActivity"
             android:parentActivityName=".activities.LotsListActivity"
-            android:launchMode="singleTop">
+            android:launchMode="singleTask">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.LotsListActivity" />

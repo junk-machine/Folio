@@ -27,9 +27,14 @@ import ru.nahk.folio.utils.BigDecimalHelper;
  */
 public final class PortfolioItemWidgetManager {
     /**
-     * Request code for pending intent to open main activity.
+     * Action name for pending intent to navigate to positions group.
      */
-    private static final int OPEN_MAIN_ACTIVITY_REQUEST_CODE = -1;
+    private static final String NAVIGATE_TO_GROUP = "NAVIGATE_TO_GROUP";
+
+    /**
+     * Activity name for pending intent to navigate to position lots.
+     */
+    private static final String NAVIGATE_TO_POSITION = "NAVIGATE_TO_POSITION";
 
     /**
      * Refreshes specified widget view.
@@ -126,8 +131,9 @@ public final class PortfolioItemWidgetManager {
                 R.id.widget_layout_root,
                 PendingIntent.getActivity(
                     context,
-                    OPEN_MAIN_ACTIVITY_REQUEST_CODE,
-                    new Intent(context, MainActivity.class),
+                    (int) group.id,
+                    new Intent(context, MainActivity.class)
+                        .setAction(NAVIGATE_TO_GROUP),
                     0));
         } else {
             view.setOnClickPendingIntent(R.id.widget_layout_root, null);
@@ -153,6 +159,7 @@ public final class PortfolioItemWidgetManager {
                     context,
                     (int) position.id,
                     new Intent(context, LotsListActivity.class)
+                        .setAction(NAVIGATE_TO_POSITION)
                         .putExtra(ActivityNavigationConstants.POSITION_ID_KEY, position.id)
                         .putExtra(ActivityNavigationConstants.STOCK_SYMBOL_KEY, position.symbol),
                     0));
