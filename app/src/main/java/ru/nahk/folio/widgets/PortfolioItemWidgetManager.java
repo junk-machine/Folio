@@ -15,6 +15,7 @@ import ru.nahk.folio.R;
 import ru.nahk.folio.activities.ActivityNavigationConstants;
 import ru.nahk.folio.activities.LotsListActivity;
 import ru.nahk.folio.activities.MainActivity;
+import ru.nahk.folio.activities.SymbolDetailsActivity;
 import ru.nahk.folio.model.GroupViewModel;
 import ru.nahk.folio.model.PortfolioDatabase;
 import ru.nahk.folio.model.PortfolioItemWidgetEntity;
@@ -35,6 +36,11 @@ public final class PortfolioItemWidgetManager {
      * Activity name for pending intent to navigate to position lots.
      */
     private static final String NAVIGATE_TO_POSITION = "NAVIGATE_TO_POSITION";
+
+    /**
+     * Activity name for pending intent to navigate to symbol details.
+     */
+    private static final String NAVIGATE_TO_SYMBOL_DETAILS = "NAVIGATE_TO_SYMBOL_DETAILS";
 
     /**
      * Refreshes specified widget view.
@@ -152,14 +158,17 @@ public final class PortfolioItemWidgetManager {
         RemoteViews view = createWidgetView(context, position);
 
         if (position != null) {
-            // Open lots list activity when widget is clicked
+            // If there are lots for this position - open lots list activity when widget is clicked,
+            // otherwise open symbol details
             view.setOnClickPendingIntent(
                 R.id.widget_layout_root,
                 PendingIntent.getActivity(
                     context,
                     (int) position.id,
-                    new Intent(context, LotsListActivity.class)
-                        .setAction(NAVIGATE_TO_POSITION)
+                    new Intent(
+                            context,
+                            position.quantity > 0 ? LotsListActivity.class : SymbolDetailsActivity.class)
+                        .setAction(position.quantity > 0 ? NAVIGATE_TO_POSITION : NAVIGATE_TO_SYMBOL_DETAILS)
                         .putExtra(ActivityNavigationConstants.POSITION_ID_KEY, position.id)
                         .putExtra(ActivityNavigationConstants.STOCK_SYMBOL_KEY, position.symbol),
                     0));
@@ -180,8 +189,8 @@ public final class PortfolioItemWidgetManager {
                     symbolValueChangeDirection > 0
                         ? R.drawable.arrow_up
                         : (symbolValueChangeDirection < 0
-                        ? R.drawable.arrow_down
-                        : R.drawable.circle));
+                            ? R.drawable.arrow_down
+                            : R.drawable.circle));
             } else {
                 view.setViewVisibility(R.id.symbol_value_change_icon, View.GONE);
             }

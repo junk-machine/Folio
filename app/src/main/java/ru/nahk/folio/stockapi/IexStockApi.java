@@ -31,7 +31,7 @@ public class IexStockApi implements StockApi {
      * URI template to query latest symbols information.
      */
     private final static String QUOTE_API_URL =
-        "https://api.iextrading.com/1.0/stock/market/quote?symbols=%s&filter=symbol,companyName,open,openTime,latestPrice,latestUpdate,close,closeTime,extendedPrice,extendedPriceTime,previousClose,high,low,week52High,week52Low";
+        "https://api.iextrading.com/1.0/stock/market/quote?symbols=%s&filter=symbol,companyName,open,openTime,latestPrice,latestUpdate,close,closeTime,extendedPrice,extendedPriceTime,previousClose,marketCap,high,low,week52High,week52Low";
 
     /**
      * Searches for symbols matching the given substring.
@@ -166,6 +166,10 @@ public class IexStockApi implements StockApi {
                                 symbolEntity.previousClosePrice = BigDecimalHelper.truncateCurrency(stockDetails.previousClosePrice);
                             }
 
+                            if (stockDetails.marketCap != null) {
+                                symbolEntity.marketCap = BigDecimalHelper.truncateCurrency(stockDetails.marketCap);
+                            }
+
                             if (stockDetails.dayHigh != null && stockDetails.dayLow != null) {
                                 symbolEntity.dayHigh = BigDecimalHelper.truncateCurrency(stockDetails.dayHigh);
                                 symbolEntity.dayLow = BigDecimalHelper.truncateCurrency(stockDetails.dayLow);
@@ -210,31 +214,33 @@ public class IexStockApi implements StockApi {
                 } else if (propertyName.equalsIgnoreCase("companyName")) {
                     stockDetails.companyName = reader.nextString();
                 } else if (propertyName.equalsIgnoreCase("open")) {
-                    stockDetails.openPrice = new BigDecimal(reader.nextString());
+                    stockDetails.openPrice = readBigDecimal(reader);
                 } else if (propertyName.equalsIgnoreCase("openTime")) {
-                    stockDetails.openTime = CalendarHelper.fromEpochInMillis(reader.nextLong());
+                    stockDetails.openTime = readCalendar(reader);
                 } else if (propertyName.equalsIgnoreCase("latestPrice")) {
-                    stockDetails.latestPrice = new BigDecimal(reader.nextString());
+                    stockDetails.latestPrice = readBigDecimal(reader);
                 } else if (propertyName.equalsIgnoreCase("latestUpdate")) {
-                    stockDetails.latestTime = CalendarHelper.fromEpochInMillis(reader.nextLong());
+                    stockDetails.latestTime = readCalendar(reader);
                 } else if (propertyName.equalsIgnoreCase("close")) {
-                    stockDetails.closePrice = new BigDecimal(reader.nextString());
+                    stockDetails.closePrice = readBigDecimal(reader);
                 } else if (propertyName.equalsIgnoreCase("closeTime")) {
-                    stockDetails.closeTime = CalendarHelper.fromEpochInMillis(reader.nextLong());
+                    stockDetails.closeTime = readCalendar(reader);
                 } else if (propertyName.equalsIgnoreCase("extendedPrice")) {
-                    stockDetails.extendedPrice = new BigDecimal(reader.nextString());
+                    stockDetails.extendedPrice = readBigDecimal(reader);
                 } else if (propertyName.equalsIgnoreCase("extendedPriceTime")) {
-                    stockDetails.extendedTime = CalendarHelper.fromEpochInMillis(reader.nextLong());
+                    stockDetails.extendedTime = readCalendar(reader);
                 } else if (propertyName.equalsIgnoreCase("previousClose")) {
-                    stockDetails.previousClosePrice = new BigDecimal(reader.nextString());
+                    stockDetails.previousClosePrice = readBigDecimal(reader);
+                } else if (propertyName.equalsIgnoreCase("marketCap")) {
+                    stockDetails.marketCap = readBigDecimal(reader);
                 } else if (propertyName.equalsIgnoreCase("high")) {
-                    stockDetails.dayHigh = new BigDecimal(reader.nextString());
+                    stockDetails.dayHigh = readBigDecimal(reader);
                 } else if (propertyName.equalsIgnoreCase("low")) {
-                    stockDetails.dayLow = new BigDecimal(reader.nextString());
+                    stockDetails.dayLow = readBigDecimal(reader);
                 } else if (propertyName.equalsIgnoreCase("week52High")) {
-                    stockDetails.week52High = new BigDecimal(reader.nextString());
+                    stockDetails.week52High = readBigDecimal(reader);
                 } else if (propertyName.equalsIgnoreCase("week52Low")) {
-                    stockDetails.week52Low = new BigDecimal(reader.nextString());
+                    stockDetails.week52Low = readBigDecimal(reader);
                 } else {
                     // Skip unknown property
                     reader.skipValue();
@@ -243,8 +249,14 @@ public class IexStockApi implements StockApi {
 
             reader.endObject();
         } catch (IOException ioError) {
-            // Try to recover
-            reader.skipValue();
+            // Try to recover - skip tokens until next object or end of document
+            while (reader.hasNext()
+                && reader.peek() != JsonToken.BEGIN_OBJECT
+                && reader.peek() != JsonToken.END_DOCUMENT) {
+
+                // It seems like skipValue skips names as well
+                reader.skipValue();
+            }
         }
     }
 
@@ -261,6 +273,41 @@ public class IexStockApi implements StockApi {
             return true;
         } else {
             return newValue.compareTo(currentValue) > 0;
+        }
+    }
+
+    /**
+     * Reads next value from the reader as {@link String} and converts it to {@link BigDecimal}.
+     * If value is NULL, then {@code null} will be returned.
+     * @param reader JSON reader to read the value from.
+     * @return The {@link BigDecimal} value or null.
+     * @throws IOException If value can't be read.
+     */
+    private static BigDecimal readBigDecimal(JsonReader reader) throws IOException {
+        if (reader.peek() == JsonToken.NULL) {
+            // JsonReader doesn't treat NULL as a valid value for String class,
+            // so we need to handle that ourselves
+            reader.nextNull();
+            return null;
+        } else {
+            return new BigDecimal(reader.nextString());
+        }
+    }
+
+    /**
+     * Reads next value from the reader as {@link long} and converts it to {@link Calendar}
+     * as epoch time in milliseconds.
+     * If value is NULL, then {@code null} will be returned.
+     * @param reader JSON reader to read the value from.
+     * @return The {@link Calendar} value or null.
+     * @throws IOException If value can't be read.
+     */
+    private static Calendar readCalendar(JsonReader reader) throws IOException{
+        if (reader.peek() == JsonToken.NULL) {
+            reader.nextNull();
+            return null;
+        } else {
+            return CalendarHelper.fromEpochInMillis(reader.nextLong());
         }
     }
 
@@ -324,6 +371,11 @@ public class IexStockApi implements StockApi {
         BigDecimal previousClosePrice;
 
         /**
+         * Market capitalization.
+         */
+        BigDecimal marketCap;
+
+        /**
          * Day's highest share price.
          */
         BigDecimal dayHigh;
@@ -356,6 +408,7 @@ public class IexStockApi implements StockApi {
             extendedPrice = null;
             extendedTime = null;
             previousClosePrice = null;
+            marketCap = null;
             dayHigh = null;
             dayLow = null;
             week52High = null;

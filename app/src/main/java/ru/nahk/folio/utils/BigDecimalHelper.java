@@ -1,6 +1,7 @@
 package ru.nahk.folio.utils;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -15,6 +16,21 @@ public final class BigDecimalHelper {
      * standard currency, which is 2.
      */
     public static final int MAX_FRACTION_DIGITS = 4;
+
+    /**
+     * One million.
+     */
+    private static BigDecimal MILLION = new BigDecimal(1000000L);
+
+    /**
+     * One billion.
+     */
+    private static BigDecimal BILLION = new BigDecimal(1000000000L);
+
+    /**
+     * One trillion.
+     */
+    private static BigDecimal TRILLION = new BigDecimal(1000000000000L);
 
     /**
      * Format for currency values.
@@ -93,6 +109,31 @@ public final class BigDecimalHelper {
      */
     public static String formatCurrencyChange(BigDecimal change) {
         return CURRENCY_CHANGE_FORMAT.format(change);
+    }
+
+    /**
+     * Formats currency value rounding it to millions, billions or trillions where possible.
+     * @param value Value to format.
+     * @return Formatted currency value.
+     */
+    public static String roundFormatCurrency(BigDecimal value) {
+        String suffix = null;
+
+        if (TRILLION.compareTo(value) < 0) {
+            value = value.divide(TRILLION, 2, RoundingMode.FLOOR);
+            suffix = "T";
+        } else if (BILLION.compareTo(value) < 0) {
+            value = value.divide(BILLION, 2, RoundingMode.FLOOR);
+            suffix = "B";
+        } else if (MILLION.compareTo(value) < 0) {
+            value = value.divide(MILLION, 2, RoundingMode.FLOOR);
+            suffix = "M";
+        }
+
+        return
+            suffix == null
+                ? formatCurrency(value)
+                : formatCurrency(value) + " " + suffix;
     }
 
     /**

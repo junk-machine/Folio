@@ -1,9 +1,11 @@
 package ru.nahk.folio.model;
 
+import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.arch.persistence.room.TypeConverters;
+import android.arch.persistence.room.migration.Migration;
 import android.content.Context;
 
 import java.math.BigDecimal;
@@ -21,13 +23,27 @@ import ru.nahk.folio.utils.BigDecimalHelper;
         GroupEntity.class,
         PortfolioItemWidgetEntity.class
     },
-    version = 1
+    version = 2
 )
 @TypeConverters({
     MoneyTypeConverter.class,
     TimestampTypeConverter.class
 })
 public abstract class PortfolioDatabase extends RoomDatabase {
+    /**
+     * Database migration that adds market capitalization column to symbols table.
+     */
+    static final Migration MIGRATION_1_2 = new Migration(1, 2) {
+        /**
+         * Executes migration scripts.
+         * @param database SQLite database instance.
+         */
+        @Override
+        public void migrate(SupportSQLiteDatabase database) {
+            database.execSQL("ALTER TABLE symbols ADD COLUMN market_cap INTEGER");
+        }
+    };
+
     /**
      * Synchronization object used during singleton initialization.
      */
@@ -74,7 +90,6 @@ public abstract class PortfolioDatabase extends RoomDatabase {
      */
     public abstract WidgetDao widgetDao();
 
-
     /**
      * Retrieves an instance of the portfolio data store.
      * @return Instance of the portfolio data store
@@ -86,6 +101,7 @@ public abstract class PortfolioDatabase extends RoomDatabase {
                     instance = Room
                         .databaseBuilder(applicationContext, PortfolioDatabase.class, "folio-db")
                         .addCallback(new DatabaseInitializationCallback(applicationContext))
+                        .addMigrations(MIGRATION_1_2)
                         .build();
                 }
             }

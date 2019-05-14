@@ -79,6 +79,11 @@ public class SymbolEntity {
     static final String PREVIOUS_CLOSE_PRICE_COLUMN = "previous_close_price";
 
     /**
+     * Name of the market capitalization column.
+     */
+    static final String MARKET_CAP_COLUMN = "market_cap";
+
+    /**
      * Name of the day's highest price column.
      */
     static final String DAY_HIGH_COLUMN = "day_high";
@@ -165,6 +170,12 @@ public class SymbolEntity {
      */
     @ColumnInfo(name = PREVIOUS_CLOSE_PRICE_COLUMN)
     public BigDecimal previousClosePrice;
+
+    /**
+     * Market capitalization.
+     */
+    @ColumnInfo(name = MARKET_CAP_COLUMN)
+    public BigDecimal marketCap;
 
     /**
      * Day's highest price.

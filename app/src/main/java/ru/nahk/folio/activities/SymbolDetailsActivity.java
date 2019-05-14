@@ -3,6 +3,7 @@ package ru.nahk.folio.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.TaskStackBuilder;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
 import android.text.TextUtils;
@@ -123,9 +124,19 @@ public class SymbolDetailsActivity
     private TextView mCloseTimeView;
 
     /**
+     * Control that groups all previous close price controls.
+     */
+    private ViewGroup mPreviousClosePriceTile;
+
+    /**
      * Control that displays previous close price.
      */
     private TextView mPreviousClosePriceView;
+
+    /**
+     * Control that displays market cap.
+     */
+    private TextView mMarketCapView;
 
     /**
      * Control that groups all day price range controls.
@@ -210,6 +221,9 @@ public class SymbolDetailsActivity
         mCloseChangeView = findViewById(R.id.close_change);
         mCloseTimeView = findViewById(R.id.close_time);
 
+        mMarketCapView = findViewById(R.id.market_cap);
+
+        mPreviousClosePriceTile = findViewById(R.id.previous_close_price_tile);
         mPreviousClosePriceView = findViewById(R.id.previous_close_price);
 
         mDayRangeTile = findViewById(R.id.day_range_tile);
@@ -229,6 +243,28 @@ public class SymbolDetailsActivity
             mStockSymbol,
             getDataStore().symbolDao(),
             this).execute();
+    }
+
+    /**
+     * Navigates back to the parent activity.
+     * @param upIntent Navigation intent.
+     * @return True if parent activity was on the back stack, otherwise false.
+     */
+    @Override
+    public boolean navigateUpTo(Intent upIntent) {
+        boolean result = super.navigateUpTo(upIntent);
+
+        if (!result) {
+            // When this activity is launched from the widget - back stack will be empty.
+            // In this case navigation will return back to home screen.
+            // Instead of that, we want to go back to the main activity,
+            // therefore we need to recreate the stack with parent activity.
+            TaskStackBuilder.create(this)
+                .addNextIntentWithParentStack(upIntent)
+                .startActivities();
+        }
+
+        return result;
     }
 
     /**
@@ -336,6 +372,9 @@ public class SymbolDetailsActivity
                 mClosePriceView, mCloseChangeView, mCloseTimeView,
                 null, null, null);
 
+            setPrice(mMarketCapView, null);
+
+            mPreviousClosePriceTile.setVisibility(View.GONE);
             setPrice(mPreviousClosePriceView, null);
 
             mDayRangeTile.setVisibility(View.GONE);
@@ -393,13 +432,23 @@ public class SymbolDetailsActivity
                 mOpenPriceView, mOpenChangeView, mOpenTimeView,
                 symbolEntity.openPrice, symbolEntity.previousClosePrice, symbolEntity.openTime);
 
-            setPrice(mPreviousClosePriceView, symbolEntity.previousClosePrice);
+            setPrice(mMarketCapView, symbolEntity.marketCap);
+
+            if (symbolEntity.previousClosePrice == null) {
+                mPreviousClosePriceTile.setVisibility(View.GONE);
+                setPrice(mPreviousClosePriceView, null);
+            }
+            else {
+                mPreviousClosePriceTile.setVisibility(View.VISIBLE);
+                setPrice(mPreviousClosePriceView, symbolEntity.previousClosePrice);
+            }
 
             if (symbolEntity.dayLow == null || symbolEntity.dayHigh == null) {
                 mDayRangeTile.setVisibility(View.GONE);
                 mDayHighView.setText(null);
                 mDayLowView.setText(null);
             } else {
+                mDayRangeTile.setVisibility(View.VISIBLE);
                 mDayHighView.setText(BigDecimalHelper.formatCurrency(symbolEntity.dayHigh));
                 mDayLowView.setText(BigDecimalHelper.formatCurrency(symbolEntity.dayLow));
             }
@@ -474,7 +523,7 @@ public class SymbolDetailsActivity
         if (priceValue == null) {
             priceView.setText(R.string.unknown_value);
         } else {
-            priceView.setText(BigDecimalHelper.formatCurrency(priceValue));
+            priceView.setText(BigDecimalHelper.roundFormatCurrency(priceValue));
         }
     }
 

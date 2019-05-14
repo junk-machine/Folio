@@ -572,6 +572,7 @@ ACSI	American Customer Satisfaction
 ACST	Acasti Pharma Inc.
 ACT	AdvisorShares Vice ETF
 ACTG	Acacia Research Corporation
+ACTTU	Act II Global Acquisition Corp. Unit
 ACU	Acme United Corporation.
 ACV	AllianzGI Diversified Income & Convertible Fund of Beneficial Interest
 ACWF	iShares Edge MSCI Multifactor Global
@@ -601,9 +602,9 @@ ADUS	Addus HomeCare Corporation
 ADVM	Adverum Biotechnologies Inc.
 ADX	Adams Diversified Equity Fund Inc.
 ADXS	Advaxis Inc.
+ADYX	Adynxx Inc.
 AE	Adams Resources & Energy Inc.
 AEB	AEGON N.V. Perp. Cap. Secs. Floating Rate (Netherlands)
-AED	AEGON N.V. Perp. Cap. Securities (Netherlands)
 AEF	Aberdeen Emerging Markets Equity Income Fund Inc.
 AEG	AEGON N.V.
 AEGN	Aegion Corp
@@ -659,7 +660,7 @@ AGNC	AGNC Investment Corp.
 AGNCB	AGNC Investment Corp. Depositary Shares representing 1/1000th Series B Preferred Stock
 AGNCM	AGNC Investment Corp. Depositary Shares rep 6.875% Series D Fixed-to-Floating Cumulative Redeemable Preferred Stock
 AGNCN	AGNC Investment Corp. Depositary Shares Each Representing a 1/1000th Interest in a Share of 7.00% Series C Fixed-To-Floating Rate Cumulative Redeemable Preferre
-AGND	WisdomTree Barclays Negative Duration U.S. Aggregate Bond Fund
+AGND	WisdomTree Barclays U.S. Aggregate Bond Negative D
 AGO	Assured Guaranty Ltd.
 AGO-B	Assured Guaranty Ltd.
 AGO-E	Assured Guaranty Ltd.
@@ -674,7 +675,7 @@ AGTC	Applied Genetic Technologies Corporation
 AGX	Argan Inc.
 AGYS	Agilysys Inc.
 AGZ	iShares Agency Bond
-AGZD	WisdomTree Interest Rate Hedged U.S. Aggregate Bond Fund
+AGZD	WisdomTree Barclays U.S. Aggregate Bond Zero Durat
 AHC	A.H. Belo Corporation (TX)
 AHH	Armada Hoffler Properties Inc.
 AHL-C	Aspen Insurance Holdings Limited 5.95% Fixed-to-Floating Rate Perpetual Non-Cumulative Preference Shares
@@ -705,9 +706,10 @@ AIQ	Global X Future Analytics Tech ETF
 AIR	AAR Corp.
 AIRG	Airgain Inc.
 AIRI	Air Industries Group
-AIRR	First Trust RBA American Industrial Renaissance ETF
+AIRR	First Trust RBA American Industrial Renaissance ET
 AIRT	Air T Inc.
 AIT	Applied Industrial Technologies Inc.
+AITB	AIT Therapeutics Inc.
 AIV-A	Apartment Investment and Management Company Preferred Series Class A
 AIW	Arlington Asset Investment Corp 6.625% Notes due 2023
 AIY	Apollo Investment Corporation 6.875% Senior Notes due 2043
@@ -715,14 +717,12 @@ AIZP	Assurant Inc. 6.50% Series D Mandatory Convertible Preferred Stock $1.00 pa
 AJRD	Aerojet Rocketdyne Holdings Inc.
 AJX	Great Ajax Corp.
 AJXA	Great Ajax Corp. 7.25% Convertible Senior Notes due 2024
-AKAO	Achaogen Inc.
 AKBA	Akebia Therapeutics Inc.
 AKCA	Akcea Therapeutics Inc.
 AKER	Akers Biosciences Inc.
 AKG	Asanko Gold Inc.
 AKO.A	Embotelladora Andina S.A.
 AKO.B	Embotelladora Andina S.A.
-AKP	Alliance California Municipal Income Fund Inc
 AKR	Acadia Realty Trust
 AKRX	Akorn Inc.
 AKS	AK Steel Holding Corporation
@@ -750,7 +750,6 @@ ALGRU	Allegro Merger Corp. Unit
 ALGRW	Allegro Merger Corp. Warrant
 ALGT	Allegiant Travel Company
 ALIM	Alimera Sciences Inc.
-ALIT	Alight Inc - Ordinary Shares Cls A
 ALJJ	ALJ Regional Holdings Inc.
 ALKS	Alkermes plc
 ALL-A	Allstate Corporation (The) Dep Shs Repstg 1/1000th Perp Pfd Ser A
@@ -770,7 +769,6 @@ ALO	Alio Gold Inc. (Canada)
 ALOT	AstroNova Inc.
 ALP-Q	Alabama Power Company 5.00% Class A Preferred Stock Cumulative Par Value $1 Per Share (Stated Capital $25 Per Share)
 ALPN	Alpine Immune Sciences Inc.
-ALQA	Alliqua BioMedical Inc.
 ALRM	Alarm.com Holdings Inc.
 ALRN	Aileron Therapeutics Inc.
 ALSK	Alaska Communications Systems Group Inc.
@@ -878,9 +876,9 @@ APDN	Applied DNA Sciences Inc
 APEI	American Public Education Inc.
 APEN	Apollo Endosurgery Inc.
 APHA	Aphria Inc.
-APHB	AmpliPhi Biosciences Corporation
 APLE	Apple Hospitality REIT Inc.
 APLS	Apellis Pharmaceuticals Inc.
+APLT	Applied Therapeutics Inc - Ordinary Shares
 APM	Aptorum Group Limited
 APO	Apollo Global Management LLC Class A Representing Class A Limitied Liability Company Interests
 APO-A	Apollo Global Management LLC 6.375% Series A Preferred Shares
@@ -936,7 +934,6 @@ ARGO	Argo Group International Holdings Ltd.
 ARGT	Global X MSCI Argentina
 ARGX	argenx SE
 ARI	Apollo Commercial Real Estate Finance Inc
-ARI-C	Apollo Commercial Real Estate Finance 8.00% Series C Cumulative Redeemable Perpetual Preferred Stock
 ARKF	ARK Fintech Innovation
 ARKG	ARK Genomic Revolution Multi-Sector
 ARKK	ARK Innovation
@@ -947,6 +944,7 @@ ARL	American Realty Investors Inc.
 ARLO	Arlo Technologies Inc.
 ARLP	Alliance Resource Partners L.P.
 ARMK	Aramark
+ARMP	Armata Pharmaceuticals Inc.
 ARNA	Arena Pharmaceuticals Inc.
 AROC	Archrock Inc.
 AROW	Arrow Financial Corporation
@@ -1012,6 +1010,7 @@ ATHE	Alterity Therapeutics Limited
 ATHM	Autohome Inc. American Depositary Shares each representing one class A.
 ATHX	Athersys Inc.
 ATI	Allegheny Technologies Incorporated
+ATIF	ATIF Holdings Limited
 ATIS	Attis Industries Inc.
 ATISW	Attis Industries Inc. Warrants
 ATKR	Atkore International Group Inc.
@@ -1032,7 +1031,6 @@ ATRO	Astronics Corporation
 ATRS	Antares Pharma Inc.
 ATSG	Air Transport Services Group Inc
 ATTO	Atento S.A.
-ATTU	Attunity Ltd.
 ATU	Actuant Corporation
 ATUS	Altice USA Inc. Class A
 ATV	Acorn International Inc. ADS
@@ -1087,6 +1085,7 @@ AXGT	Axovant Gene Therapies Ltd.
 AXJL	WisdomTree Asia Pacific ex-Japan Total Dividend Fund
 AXJV	iShares Edge MSCI A Min Vol Asia ex Japan
 AXL	American Axle & Manufacturing Holdings Inc.
+AXLA	Axcella Health Inc.
 AXNX	Axonics Modulation Technologies Inc.
 AXR	AMREP Corporation
 AXS	Axis Capital Holdings Limited
@@ -1232,7 +1231,6 @@ BFC	Bank First National Corporation
 BFIN	BankFinancial Corporation
 BFIT	Global X Health & Wellness Thematic ETF
 BFK	BlackRock Municipal Income Trust
-BFL	BankFlorida - Ordinary Shares
 BFO	Blackrock Florida Municipal 2020 Term Trust
 BFOR	Barron's 400
 BFR	BBVA Banco Frances S.A.
@@ -1277,7 +1275,7 @@ BHV	BlackRock Virginia Municipal Bond Trust
 BHVN	Biohaven Pharmaceutical Holding Company Ltd.
 BIB	ProShares Ultra Nasdaq Biotechnology
 BIBL	Inspire 100
-BICK	First Trust BICK Index Fund
+BICK	First Trust Global BICK Index Fund
 BID	Sotheby's
 BIDU	Baidu Inc.
 BIF	Boulder Growth & Income Fund Inc.
@@ -1405,7 +1403,7 @@ BPFH	Boston Private Financial Holdings Inc.
 BPL	Buckeye Partners L.P.
 BPMC	Blueprint Medicines Corporation
 BPMP	BP Midstream Partners LP representing Limited Partner Interests
-BPMX	BioPharmX Corporation. Common
+BPMX	BioPharmX Corporation
 BPOP	Popular Inc.
 BPOPM	Popular Inc. Popular Capital Trust II
 BPOPN	Popular Inc. Popular Capital Trust I -6.70% Cumulative Monthly Income Trust Preferred Securities
@@ -1446,6 +1444,7 @@ BRPA	Big Rock Partners Acquisition Corp.
 BRPAR	Big Rock Partners Acquisition Corp. Right
 BRPAU	Big Rock Partners Acquisition Corp. Unit
 BRPAW	Big Rock Partners Acquisition Corp. Warrant
+BRPM	B. Riley Principal Merger Corp. Class A
 BRQS	Borqs Technologies Inc.
 BRS	Bristow Group Inc.
 BRSS	Global Brass and Copper Holdings Inc.
@@ -1508,6 +1507,7 @@ BTX	BioTime Inc.
 BTZ	BlackRock Credit Allocation Income Trust
 BUD	Anheuser-Busch Inbev SA Sponsored ADR (Belgium)
 BUI	BlackRock Utility Infrastructure & Power Opportunities Trust
+BUL	Pacer US Cash Cows Growth
 BURG	Chanticleer Holdings Inc.
 BURL	Burlington Stores Inc.
 BUSE	First Busey Corporation
@@ -1516,7 +1516,7 @@ BUYN	USCF SummerHaven SHPEN Index Fund
 BV	BrightView Holdings Inc.
 BVAL	Brand Value
 BVN	Buenaventura Mining Company Inc.
-BVNSC	Brandes Investment Trust
+BVNSC	Brandes Value NextShares ETF
 BVSN	BroadVision Inc.
 BVXV	BiondVax Pharmaceuticals Ltd.
 BW	Babcock & Wilcox Enterprises Inc.
@@ -1544,6 +1544,7 @@ BYD	Boyd Gaming Corporation
 BYFC	Broadway Financial Corporation
 BYLD	iShares Yield Optimized Bond
 BYM	Blackrock Municipal Income Quality Trust of Beneficial Interest
+BYND	Beyond Meat Inc.
 BYSI	BeyondSpring Inc.
 BZH	Beazer Homes USA Inc.
 BZM	BlackRock Maryland Municipal Bond Trust of beneficial interest
@@ -1595,7 +1596,6 @@ CARZ	First Trust NASDAQ Global Auto Index Fund
 CASA	Casa Systems Inc.
 CASH	Meta Financial Group Inc.
 CASI	CASI Pharmaceuticals Inc.
-CASM	CAS Medical Systems Inc.
 CASS	Cass Information Systems Inc
 CASY	Caseys General Stores Inc.
 CATB	Catabasis Pharmaceuticals Inc.
@@ -1654,7 +1654,7 @@ CCM	Concord Medical Services Holdings Limited ADS (Each represents three)
 CCMP	Cabot Microelectronics Corporation
 CCNE	CNB Financial Corporation
 CCNI	Command Center Inc.
-CCO	Clear Channel Outdoor Holdings Inc. Class A
+CCO	Clear Channel Outdoor Holdings Inc.
 CCOI	Cogent Communications Holdings Inc.
 CCOR	Cambria Core Equity
 CCR	CONSOL Coal Resources LP representing limited partner interests
@@ -1665,7 +1665,7 @@ CCU	Compania Cervecerias Unidas S.A.
 CCXI	ChemoCentryx Inc.
 CCZ	Comcast Holdings ZONES
 CDAY	Ceridian HCM Holding Inc.
-CDC	VictoryShares US EQ Income Enhanced Volatility Wtd ETF
+CDC	Compass EMP US EQIncome 100 Enhanced Volatity Wtd
 CDE	Coeur Mining Inc.
 CDEV	Centennial Resource Development Inc.
 CDK	CDK Global Inc.
@@ -1719,8 +1719,8 @@ CEV	Eaton Vance California Municipal Income Trust Shares of Beneficial Interest
 CEVA	CEVA Inc.
 CEW	WisdomTree Emerging Currency Strategy Fund
 CEY	VictoryShares Emerging Market High Div Volatility
-CEZ	Victory CEMP Emerging Market Volatility Wtd Index
-CFA	VictoryShares US 500 Volatility Wtd ETF
+CEZ	VictoryShares Emerging Market Volatility Wtd ETF
+CFA	Compass EMP U.S. 500 Volatility Weighted Index ETF
 CFBI	Community First Bancshares Inc.
 CFBK	Central Federal Corporation
 CFFA	CF Finance Acquisition Corp.
@@ -1744,7 +1744,6 @@ CGEN	Compugen Ltd.
 CGIX	Cancer Genetics Inc.
 CGNX	Cognex Corporation
 CGO	Calamos Global Total Return Fund
-CGVIC	Causeway ETMF Trust
 CGW	Invesco S&P Global Water Index
 CHA	China Telecom Corp Ltd ADS
 CHAC	Chardan Healthcare Acquisition Corp.
@@ -1766,7 +1765,7 @@ CHGG	Chegg Inc.
 CHGX	Change Finance U.S. Large Cap Fossil Fuel Free
 CHH	Choice Hotels International Inc.
 CHI	Calamos Convertible Opportunities and Income Fund
-CHIC	Global X MSCI China Communication Services ETF
+CHIC	Global X Funds MSCI China Communication Services
 CHIE	Global X MSCI China Energy
 CHIH	Global X Funds MSCI China Health Care
 CHII	Global X MSCI China Industrials
@@ -1834,7 +1833,6 @@ CISN	Cision Ltd.
 CIT	CIT Group Inc (DEL)
 CIVB	Civista Bancshares Inc.
 CIVBP	Civista Bancshares Inc. Depositary Shares Each Representing a 1/40th Interest in a 6.50% Noncumulative Redeemable Convertible Perpetual Preferred Share Series B
-CIVEC	Causeway ETMF Trust
 CIX	CompX International Inc.
 CIZ	VictoryShares Developed Enhanced Volatility Wtd ETF
 CIZN	Citizens Holding Company
@@ -1918,10 +1916,6 @@ CMRX	Chimerix Inc.
 CMS-B	CMS Energy Corporation Preferred Stock
 CMSA	CMS Energy Corporation 5.625% Junior Subordinated Notes due 2078
 CMSD	CMS Energy Corporation 5.875% Junior Subordinated Notes due 2079
-CMSS	CM Seven Star Acquisition Corporation
-CMSSR	CM Seven Star Acquisition Corporation Right
-CMSSU	CM Seven Star Acquisition Corporation Unit
-CMSSW	CM Seven Star Acquisition Corporation Warrant
 CMT	Core Molding Technologies Inc
 CMTL	Comtech Telecommunications Corp.
 CMU	MFS Municipal Income Trust
@@ -2074,8 +2068,9 @@ CRSAW	Crescent Acquisition Corp Warrant
 CRSP	CRISPR Therapeutics AG
 CRT	Cross Timbers Royalty Trust
 CRTO	Criteo S.A.
+CRTX	Cortexyme Inc.
 CRUS	Cirrus Logic Inc.
-CRUSC	Calvert Management Series
+CRUSC	Calvert Ultra-Short Duration Income NextShares
 CRVL	CorVel Corp.
 CRVS	Corvus Pharmaceuticals Inc.
 CRWS	Crown Crafts Inc.
@@ -2083,7 +2078,7 @@ CRY	CryoLife Inc.
 CRZO	Carrizo Oil & Gas Inc.
 CS	Credit Suisse Group American Depositary Shares
 CSA	VictoryShares US Small Cap Volatility Wtd ETF
-CSB	Compass EMP US Small Cap High Dividend 100 Volatil
+CSB	VictoryShares US Small Cap High Div Volatility Wtd ETF
 CSBR	Champions Oncology Inc.
 CSD	Invesco S&P Spin-Off
 CSF	VictoryShares US Discovery Enhanced Volatility Wtd ETF
@@ -2259,10 +2254,10 @@ DBJP	Xtrackers MSCI Japan Hedged Equity
 DBKO	Xtrackers MSCI South Korea Hedged Equity
 DBL	DoubleLine Opportunistic Credit Fund of Beneficial Interest
 DBLV	AdvisorShares DoubleLine Value Equity
+DBMF	iM DBi Managed Futures Strategy ETF
 DBO	Invesco DB Oil Fund
 DBP	Invesco DB Precious Metals Fund
 DBS	Invesco DB Silver Fund
-DBUK	Xtrackers MSCI United Kingdom Hedged Equity
 DBV	Invesco DB G10 Currency Harvest Fund
 DBVT	DBV Technologies S.A.
 DBX	Dropbox Inc
@@ -2283,7 +2278,7 @@ DD-B	E.I. du Pont de Nemours and Company Preferred Stock
 DDD	3D Systems Corporation
 DDF	Delaware Investments Dividend & Income Fund Inc.
 DDG	ProShares Short Oil & Gas
-DDIV	First Trust RBA Quality Income ETF
+DDIV	First Trust Dorsey Wright Momentum & Dividend ETF
 DDLS	WisdomTree Dynamic Currency Hedged International SmallCap Equity Fund
 DDM	ProShares Ultra Dow30
 DDMX	DD3 Acquisition Corp.
@@ -2293,6 +2288,7 @@ DDS	Dillard's Inc.
 DDT	Dillard's Capital Trust I
 DDWM	WisdomTree Dynamic Currency Hedged International Equity Fund
 DEA	Easterly Government Properties Inc.
+DEACU	Diamond Eagle Acquisition Corp - Unit (1 Ordinary share Cls A & 1/3 Wrt)
 DECK	Deckers Outdoor Corporation
 DEEF	Xtrackers FTSE Developed ex US Comprehensive Factor
 DEF	Invesco Defensive Equity
@@ -2539,7 +2535,7 @@ DWPP	First Trust Dorsey Wright People's Portfolio ETF
 DWSH	AdvisorShares Dorsey Wright Short ETF
 DWSN	Dawson Geophysical Company
 DWT	VelocityShares 3x Inverse Crude Oil ETNs linked to the S&P GSCI Crude Oil Index ER
-DWTR	Invesco DWA Tactical Sector Rotation ETF
+DWTR	PowerShares DWA Tactical Sector Rotation Portfolio
 DWX	SPDR S&P International Dividend
 DX	Dynex Capital Inc.
 DX-A	Dynex Capital Inc. Preferred Stock Series A
@@ -2583,7 +2579,7 @@ EB	Eventbrite Inc. Class A
 EBAYL	eBay Inc. 6.0% Notes Due 2056
 EBF	Ennis Inc.
 EBIX	Ebix Inc.
-EBIZ	Global X E-commerce ETF
+EBIZ	Global X E-Commerce ETF
 EBMT	Eagle Bancorp Montana Inc.
 EBND	SPDR Bloomberg Barclays Emerging Markets Local Bond
 EBR	Centrais Electricas Brasileiras S A American Depositary Shares (Each representing one)
@@ -2607,6 +2603,7 @@ ECOL	US Ecology Inc.
 ECOM	ChannelAdvisor Corporation
 ECON	Columbia Emerging Markets Consumer
 ECOR	electroCore Inc.
+ECOW	Pacer Emerging Markets Cash Cows 100 ETF
 ECPG	Encore Capital Group Inc
 ECT	ECA Marcellus Trust I of Beneficial Interest
 EDAP	EDAP TMS S.A.
@@ -2728,7 +2725,7 @@ EMF	Templeton Emerging Markets Fund
 EMFM	Global X MSCI Next Emerging & Frontier
 EMGF	iShares Edge MSCI Multifactor Emerging Markets
 EMHY	iShares Emerging Markets High Yield Bond
-EMIF	iShares S&P Emerging Markets Infrastructure Ix Fd
+EMIF	iShares S&P Emerging Markets Infrastructure Index Fund
 EMIH	Xtrackers Emerging Markets Bond - Interest Rate Hedged
 EMKR	EMCORE Corporation
 EML	Eastern Company (The)
@@ -2812,7 +2809,6 @@ EQC	Equity Commonwealth of Beneficial Interest
 EQC-D	Equity Commonwealth 6.50% Pfd Conv Shs Ser D
 EQH	AXA Equitable Holdings Inc.
 EQL	ALPS Equal Sector Weight
-EQLT	Workplace Equality Portfolio
 EQM	EQM Midstream Partners, LP
 EQNR	Equinor ASA
 EQRR	ProShares Equities for Rising Rates ETF
@@ -2842,7 +2838,7 @@ ESE	ESCO Technologies Inc.
 ESEA	Euroseas Ltd.
 ESG	FlexShares Trust STOXX US ESG Impact Index Fund
 ESGD	iShares ESG MSCI EAFE ETF
-ESGE	iShares ESG MSCI EM ETF
+ESGE	iShares MSCI EM ESG Select ETF
 ESGF	Oppenheimer Global ESG Revenue
 ESGG	FlexShares STOXX Global ESG Impact Index Fund
 ESGL	Oppenheimer Revenue Weighted ETF Trust ESG Revenue
@@ -2882,6 +2878,7 @@ ETO	Eaton Vance Tax-Advantage Global Dividend Opp
 ETON	Eton Pharmaceuticals Inc.
 ETP-C	Energy Transfer Operating L.P. Series C Fixed-to-Floating Rate Cumulative Redeemable Perpetual Preferred Units
 ETP-D	Energy Transfer Operating L.P. 7.625% Series D Fixed-to-Floating Rate Cumulative Redeemable Perpetual Preferred Units
+ETP-E	Energy Transfer Operating L.P. Series E Fixed-to-Floating Rate Cumulative Redeemable Perpetual Preferred Units
 ETRN	Equitrans Midstream Corporation
 ETSY	Etsy Inc.
 ETTX	Entasis Therapeutics Holdings Inc.
@@ -2912,7 +2909,7 @@ EVC	Entravision Communications Corporation
 EVER	EverQuote Inc.
 EVF	Eaton Vance Senior Income Trust
 EVFM	Evofem Biosciences Inc.
-EVFTC	Eaton Vance NextShares Trust II
+EVFTC	Eaton Vance Floating-Rate NextShares
 EVG	Eaton Vance Short Diversified Income Fund Duration Diversified Income Fund of Beneficial Interest
 EVGBC	Eaton Vance NextShares Trust
 EVGN	Evogene Ltd.
@@ -2920,7 +2917,7 @@ EVH	Evolent Health Inc Class A
 EVI	EVI Industries Inc.
 EVIX	VelocityShares 1x Long VSTOXX Futures ETN
 EVK	Ever-Glory International Group Inc.
-EVLMC	Eaton Vance TABS 5-to-15 Year Laddered Municipal B
+EVLMC	Eaton Vance NextShares Trust II
 EVLO	Evelo Biosciences Inc.
 EVLV	EVINE Live Inc.
 EVM	Eaton Vance California Municipal Bond Fund of Beneficial Interest $.01 par value
@@ -3035,7 +3032,7 @@ FBT	First Trust Amex Biotech Index Fund
 FBZ	First Trust Brazil AlphaDEX Fund
 FC	Franklin Covey Company
 FCA	First Trust China AlphaDEX Fund
-FCAL	First Trust California Municipal High income ETF
+FCAL	First Trust California Municipal High Income ETF
 FCAN	First Trust Canada AlphaDEX Fund
 FCAP	First Capital Inc.
 FCAU	Fiat Chrysler Automobiles N.V.
@@ -3057,7 +3054,7 @@ FCPT	Four Corners Property Trust Inc.
 FCSC	Fibrocell Science Inc.
 FCT	First Trust Senior Floating Rate Income Fund II of Beneficial Interest
 FCTR	First Trust Lunt U.S. Factor Rotation
-FCVT	First Trust SSI Strategic Convertible Securities ETF
+FCVT	First Trust SSI Strategic Convertible Securities E
 FDBC	Fidelity D & D Bancorp Inc.
 FDC	First Data Corporation Class A
 FDD	First Trust Dow Jones STOXX Select Dividend 30 Index Fund
@@ -3140,7 +3137,7 @@ FI	Frank's International N.V.
 FIBK	First Interstate BancSystem Inc.
 FIBR	iShares Edge U.S. Fixed Income Balanced Risk
 FICO	Fair Isaac Corproation
-FID	International Multi-Asset Diversified Income Index
+FID	First Trust S&P International Dividend Aristocrats ETF
 FIDI	Fidelity International High Dividend
 FIDU	Fidelity MSCI Industrials Index
 FIEE	UBS AG FI Enhanced Europe 50 ETN due February 12 2026
@@ -3240,7 +3237,7 @@ FM	iShares MSCI Frontier 100 Fund
 FMAO	Farmers & Merchants Bancorp Inc.
 FMAT	Fidelity MSCI Materials Index
 FMB	First Trust Managed Municipal ETF
-FMBH	First Mid-Illinois Bancshares Inc.
+FMBH	First Mid Bancshares Inc.
 FMBI	First Midwest Bancorp Inc.
 FMCI	Forum Merger II Corporation
 FMCIU	Forum Merger II Corporation Unit
@@ -3288,7 +3285,7 @@ FOE	Ferro Corporation
 FOF	Cohen & Steers Closed-End Opportunity Fund Inc.
 FOLD	Amicus Therapeutics Inc.
 FOMX	Foamix Pharmaceuticals Ltd.
-FONE	First Trust NASDAQ Smartphone Index Fund
+FONE	First Trust NASDAQ OMX CEA Smartphone Index Fund
 FONR	Fonar Corporation
 FOR	Forestar Group Inc
 FORD	Forward Industries Inc.
@@ -3318,6 +3315,7 @@ FQAL	Fidelity Quality Factor
 FR	First Industrial Realty Trust Inc.
 FRA	Blackrock Floating Rate Income Strategies Fund Inc
 FRAC	Keane Group Inc.
+FRAF	Franklin Financial Services Corporation
 FRAK	VanEck Vectors Unconventional Oil & Gas
 FRAN	Francesca's Holdings Corporation
 FRBA	First Bank
@@ -3355,7 +3353,6 @@ FSLR	First Solar Inc.
 FSM	Fortuna Silver Mines Inc (Canada)
 FSMB	First Trust Short Duration Managed Municipal
 FSMD	Fidelity Small-Mid Factor
-FSNN	Fusion Connect Inc.
 FSP	Franklin Street Properties Corp.
 FSS	Federal Signal Corporation
 FSTA	Fidelity MSCI COnsumer Staples Index
@@ -3380,7 +3377,7 @@ FTEO	FRONTEO Inc.
 FTF	Franklin Limited Duration Income Trust of Beneficial Interest
 FTFT	Future FinTech Group Inc.
 FTGC	First Trust Global Tactical Commodity Strategy Fund
-FTHI	First Trust BuyWrite Income ETF
+FTHI	First Trust High Income ETF
 FTK	Flotek Industries Inc.
 FTLB	First Trust Hedged BuyWrite Income ETF
 FTLS	First Trust Long/Short Equity
@@ -3439,6 +3436,7 @@ FXH	First Trust Health Care AlphaDEX
 FXI	iShares China Large-Cap
 FXL	First Trust Technology AlphaDEX
 FXN	First Trust Energy AlphaDEX Fund
+FXNC	First National Corporation
 FXO	First Trust Financials AlphaDEX
 FXP	ProShares Ultrashort FTSE China 50
 FXR	First Trust Industrials AlphaDEX
@@ -3577,6 +3575,7 @@ GIB	CGI Inc.
 GIFI	Gulf Island Fabrication Inc.
 GIG	GigCapital Inc.
 GIGB	Goldman Sachs Access Investment Grade Corporate Bond
+GIGE	SoFi Gig Economy ETF
 GIGM	GigaMedia Limited
 GII	SPDR S&P Global Infrastructure
 GIII	G-III Apparel Group LTD.
@@ -3661,6 +3660,7 @@ GNFT	GENFIT S.A.
 GNK	Genco Shipping & Trading Limited New (Marshall Islands)
 GNL	Global Net Lease Inc.
 GNL-A	Global Net Lease Inc. 7.25% Series A Cumulative Redeemable Preferred Stock $0.01 par value per share
+GNLN	Greenlane Holdings Inc.
 GNMA	iShares GNMA Bond ETF
 GNMK	GenMark Diagnostics Inc.
 GNMX	Aevi Genomic Medicine Inc.
@@ -3695,7 +3695,6 @@ GPAQ	Gordon Pointe Acquisition Corp.
 GPAQU	Gordon Pointe Acquisition Corp. Unit
 GPAQW	Gordon Pointe Acquisition Corp. Warrant
 GPI	Group 1 Automotive Inc.
-GPIC	Gaming Partners International Corporation
 GPJA	Georgia Power Company Series 2017A 5.00% Junior Subordinated Notes due October 1 2077
 GPK	Graphic Packaging Holding Company
 GPL	Great Panther Mining Limited (Canada)
@@ -3721,7 +3720,6 @@ GRI	Cohen & Steers Global Realty Majors
 GRID	First Trust NASDAQ Clean Edge Smart Grid Infrastructure Index Fund
 GRIF	Griffin Industrial Realty Inc.
 GRIN	Grindrod Shipping Holdings Ltd.
-GRMY	Xtrackers Germany Equity
 GRNB	VanEck Vectors Green Bond
 GRNQ	Greenpro Capital Corp.
 GROW	U.S. Global Investors Inc.
@@ -3839,7 +3837,6 @@ HBANO	Huntington Bancshares Incorporated Depositary Shares
 HBB	Hamilton Beach Brands Holding Company Class A
 HBCP	Home Bancorp Inc.
 HBIO	Harvard Bioscience Inc.
-HBK	Hamilton Bancorp Inc.
 HBM	Hudbay Minerals Inc. (Canada)
 HBMD	Howard Bancorp Inc.
 HBNC	Horizon Bancorp Inc.
@@ -3887,6 +3884,7 @@ HEI.A	Heico Corporation
 HELE	Helen of Troy Limited
 HEP	Holly Energy Partners L.P.
 HEQ	John Hancock Hedged Equity & Income Fund of Beneficial Interest
+HERD	Pacer Cash Cows Fund of Funds ETF
 HESM	Hess Midstream Partners LP Representing Limited Partner Interests
 HEWC	iShares Currency Hedged MSCI Canada
 HEWG	iShares Currency Hedged MSCI Germany ETF
@@ -3919,6 +3917,7 @@ HHHH	Wealthbridge Acquisition Limited
 HHHHR	Wealthbridge Acquisition Limited Rights
 HHHHU	Wealthbridge Acquisition Limited Unit
 HHHHW	Wealthbridge Acquisition Limited Warrants
+HHR	HeadHunter Group PLC
 HHS	Harte-Hanks Inc.
 HI	Hillenbrand Inc
 HIBB	Hibbett Sports Inc.
@@ -3979,6 +3978,7 @@ HOML	ETRACS Monthly Reset 2xLeveraged ISE Exclusively Homebuilders ETN due March
 HOMZ	Hoya Capital Housing
 HONE	HarborOne Bancorp Inc.
 HONR	InsightShares Patriotic Employers
+HOOK	HOOKIPA Pharma Inc.
 HOPE	Hope Bancorp Inc.
 HOS	Hornbeck Offshore Services
 HOTH	Hoth Therapeutics Inc.
@@ -4001,6 +4001,7 @@ HROW	Harrow Health Inc.
 HRTG	Heritage Insurance Holdings Inc.
 HRTX	Heron Therapeutics Inc.
 HRZN	Horizon Technology Finance Corporation
+HSACU	Health Sciences Acquisitions Corp - Unit (1 Ordinary share & 1 Wrt)
 HSBC	HSBC Holdings plc.
 HSBC-A	HSBC Holdings plc. ADR SER A REP 1/40 PFD SER A
 HSC	Harsco Corporation
@@ -4039,9 +4040,6 @@ HUBG	Hub Group Inc.
 HUBS	HubSpot Inc.
 HUD	Hudson Ltd. Class A
 HUN	Huntsman Corporation
-HUNT	Hunter Maritime Acquisition Corp.
-HUNTU	Hunter Maritime Acquisition Corp. Unit
-HUNTW	Hunter Maritime Acquisition Corp. Warrant
 HURC	Hurco Companies Inc.
 HURN	Huron Consulting Group Inc.
 HUSA	Houston American Energy Corporation
@@ -4085,7 +4083,7 @@ HYXE	iShares iBoxx $ High Yield ex Oil & Gas Corporate Bond ETF
 HYXU	iShares International High Yield Bond
 HYZD	WisdomTree Interest Rate Hedged High Yield Bond Fund
 HZN	Horizon Global Corporation
-HZNP	Horizon Pharma plc
+HZNP	Horizon Therapeutics Public Limited Company
 HZO	MarineMax Inc. (FL)
 I	Intelsat S.A.
 IAC	IAC/InterActiveCorp
@@ -4117,6 +4115,11 @@ IBDQ	iShares iBonds Dec 2025 Term Corporate
 IBDR	iShares iBonds Dec 2026 Term Corporate
 IBDS	iShares iBonds Dec 2027 Term Corporate
 IBDT	iShares iBonds Dec 2028 Term Corporate
+IBHA	iShares iBonds 2021 Term High Yield and Income
+IBHB	iShares iBonds 2022 Term High Yield and Income
+IBHC	iShares iBonds 2023 Term High Yield and Income
+IBHD	iShares iBonds 2024 Term High Yield and Income
+IBHE	iShares iBonds 2025 Term High Yield and Income
 IBIO	iBio Inc.
 IBKC	IBERIABANK Corporation
 IBKCN	IBERIABANK Corporation Depositary Shares each representing a 1/400th ownership interest in a share of our 6.100% Fixed-to-Floating Non-Cumulative Perpetual Pref
@@ -4132,6 +4135,7 @@ IBMM	iShares iBonds Dec 2024 Term Muni Bond
 IBMN	iShares iBonds Dec 2025 Term Muni Bond
 IBMO	iShares iBonds Dec 2026 Term Muni Bond
 IBMP	iShares iBonds Dec 2027 Term Muni Bond
+IBMQ	iShares iBonds Dec 2028 Term Muni Bond
 IBN	ICICI Bank Limited
 IBND	SPDR Bloomberg Barclays International Corporate Bond
 IBOC	International Bancshares Corporation
@@ -4171,6 +4175,7 @@ IDMO	Invesco S&P International Developed Momentum
 IDN	Intellicheck Inc.
 IDOG	ALPS International Sector Dividend Dogs
 IDRA	Idera Pharmaceuticals Inc.
+IDRV	iShares Self-Driving EV and Tech
 IDSA	Industrial Services of America Inc.
 IDSY	I.D. Systems Inc.
 IDT	IDT Corporation Class B
@@ -4211,7 +4216,7 @@ IFMK	iFresh Inc.
 IFN	India Fund Inc. (The)
 IFRA	iShares U.S. Infrastructure
 IFRX	InflaRx N.V.
-IFV	First Trust Dorsey Wright International Focus 5
+IFV	First Trust Dorsey Wright International Focus 5 ETF
 IG	Principal Investment Grade Corporate Active
 IGA	Voya Global Advantage and Premium Opportunity Fund of Beneficial Interest
 IGBH	iShares Interest Rate Hedged Long-Term Corporate Bond
@@ -4222,7 +4227,7 @@ IGEB	iShares Edge Investment Grade Enhanced Bond
 IGF	iShares Global Infrastructure ETF
 IGHG	ProShares Investment Grade-Interest Rate Hedged
 IGI	Western Asset Investment Grade Defined Opportunity Trust Inc.
-IGIB	iShares Intermediate-Term Corporate Bond ETF
+IGIB	iShares Intermediate Credit Bond ETF
 IGIH	Xtrackers Investment Grade Bond - Interest Rate Hedged
 IGLB	Shares Long-Term Corporate Bond
 IGLD	Internet Gold Golden Lines Ltd.
@@ -4255,7 +4260,6 @@ IIGV	Invesco Investment Grade Value
 III	Information Services Group Inc.
 IIIN	Insteel Industries Inc.
 IIIV	i3 Verticals Inc.
-IIJI	Internet Initiative Japan Inc.
 IIM	Invesco Value Municipal Income Trust
 IIN	IntriCon Corporation
 IIPR	Innovative Industrial Properties Inc.
@@ -4406,7 +4410,6 @@ ISDS	Invesco RAFI Strategic Developed ex-US Small Company ETF
 ISDX	Invesco RAFI Strategic Developed ex-US ETF
 ISEE	IVERIC bio Inc.
 ISEM	Invesco RAFI Strategic Emerging Markets ETF
-ISF	ING Group N.V. Perp Hybrid Cap Secs (Netherlands)
 ISG	ING Group N.V. Perpetual Dent Secs 6.125%
 ISHG	iShares 1-3 Year International Treasury Bond ETF
 ISIG	Insignia Systems Inc.
@@ -4447,7 +4450,7 @@ IVAL	Alpha Architect International Quantitative Value
 IVC	Invacare Corporation
 IVE	iShares S&P 500 Value
 IVENC	Ivy NextShares
-IVFGC	Ivy NextShares
+IVFGC	Ivy Focused Growth NextShares
 IVFVC	Ivy NextShares
 IVH	Ivy High Income Opportunities Fund of Beneficial Interest
 IVLU	iShares Edge MSCI Intl Value Factor
@@ -4535,6 +4538,7 @@ JELD	JELD-WEN Holding Inc.
 JEMD	Nuveen Emerging Markets Debt 2022 Target Term Fund of Beneficial Interest $0.01 par value per share
 JEQ	Aberdeen Japan Equity Fund Inc.
 JETS	U.S. Global Jets
+JFIN	Jiayin Group Inc - ADR
 JFKKU	8i Enterprises Acquisition Corp Unit
 JFR	Nuveen Floating Rate Income Fund
 JG	Aurora Mobile Limited
@@ -4581,7 +4585,7 @@ JKF	iShares Morningstar Large-Cap Value
 JKG	iShares Morningstar Mid-Cap
 JKH	iShares Morningstar Mid-Cap Growth
 JKHY	Jack Henry & Associates Inc.
-JKI	iShares Morningstar Mid-Cap Value ETF
+JKI	iShares Morningstar Mid-Cap ETF
 JKJ	iShares Morningstar Small-Cap
 JKK	iShares Morningstar Small-Cap Growth
 JKL	iShares Morningstar Small-Cap Value ETFnd
@@ -4711,6 +4715,7 @@ KEQU	Kewaunee Scientific Corporation
 KEX	Kirby Corporation
 KEY-I	KeyCorp Depositary Shares Series E
 KEY-J	KeyCorp Depositary Shares Series F
+KEY-K	KeyCorp Depositary Shares Series G
 KEYS	Keysight Technologies Inc.
 KEYW	The KEYW Holding Corporation
 KF	Korea Fund Inc. (The)
@@ -4766,7 +4771,6 @@ KOIN	Innovation Shares NextGen Protocol
 KOL	VanEck Vectors Coal
 KOLD	ProShares UltraShort Bloomberg Natural Gas
 KOMP	SPDR Kensho New Economies Composite
-KONA	Kona Grill Inc.
 KOOL	Cesca Therapeutics Inc.
 KOP	Koppers Holdings Inc.
 KOPN	Kopin Corporation
@@ -4790,6 +4794,7 @@ KRYS	Krystal Biotech Inc.
 KSA	iShares Trust MSCI Saudi Arabia
 KSM	DWS Strategic Municipal Income Trust
 KT	KT Corporation
+KTB#	Kontoor Brands Inc. When Issued
 KTCC	Key Tronic Corporation
 KTF	DWS Municipal Income Trust
 KTH	Structures Products Cp 8% CorTS Issued by Peco Energy Cap Tr II Preferred Stock
@@ -4804,6 +4809,8 @@ KW	Kennedy-Wilson Holdings Inc.
 KWEB	KraneShares Trust CSI China Internet
 KWR	Quaker Chemical Corporation
 KXI	iShares Global Consumer Staples
+KXIN	Kaixin Auto Holdings
+KXINW	Kaixin Auto Holdings Warrant
 KYN	Kayne Anderson MLP/Midstream Investment Company
 KYN-F	Kayne Anderson MLP/Midstream Investment Company 3.50% Series F Mandatory Redeemable Preferred Shares $25.00 Liquidation Preference per share
 KZIA	Kazia Therapeutics Limited
@@ -4842,6 +4849,7 @@ LBTYB	Liberty Global plc Class B Ordinary Shares
 LBTYK	Liberty Global plc
 LBY	Libbey Inc.
 LC	LendingClub Corporation
+LCAHU	Landcadia Holdings II Inc. Unit
 LCI	Lannett Co Inc
 LCII	LCI Industries
 LCNB	LCNB Corporation
@@ -4866,10 +4874,9 @@ LEGR	First Trust Indxx Innovative Transaction & Process ETF
 LEJU	Leju Holdings Limited American Depositary Shares each representing one
 LEMB	iShares J.P. Morgan EM Local Currency Bond
 LEN.B	Lennar Corporation Class B
-LENS	Presbia PLC
+LEND	Amplify CrowdBureau Peer-to-Peer Lending & Crowdfunding
 LEO	Dreyfus Strategic Municipals Inc.
 LEU	Centrus Energy Corp. Class A
-LEVB	Level Brands Inc.
 LEVI	Levi Strauss & Co Class A
 LEVL	Level One Bancorp Inc.
 LEXEA	Liberty Expedia Holdings Inc. Series A Common Stock
@@ -5112,6 +5119,7 @@ MDY	SPDR MidCap Trust Series I
 MDYG	SPDR S&P 400 Mid Cap Growth ETF (based on S&P MidCap 400 Growth Index--symbol: MUV)
 MDYV	SPDR S&P 400 Mid Cap Value ETF (based on S&P MidCap 400 Value Index--symbol: MGD
 MEAR	iShares Short Maturity Municipal Bond
+MEC	Mayville Engineering Company Inc.
 MED	MEDIFAST INC
 MEDP	Medpace Holdings Inc.
 MEET	The Meet Group Inc.
@@ -5200,6 +5208,7 @@ MIND	Mitcham Industries Inc.
 MINDP	Mitcham Industries Inc. Series A 9.00% Series A Cumulative Preferred Stock
 MINI	Mobile Mini Inc.
 MINT	PIMCO Enhanced Short Maturity Active Exchange-Traded Fund
+MIST	Milestone Pharmaceuticals Inc.
 MITK	Mitek Systems Inc.
 MITO	Stealth BioTherapeutics Corp.
 MITT	AG Mortgage Investment Trust Inc.
@@ -5271,8 +5280,9 @@ MNOV	MediciNova Inc.
 MNP	Western Asset Municipal Partners Fund Inc.
 MNR	Monmouth Real Estate Investment Corporation Class A
 MNR-C	Monmouth Real Estate Investment Corporation 6.125% Series C Cumulative Redeemable Preferred Stock
+MNRL	Brigham Minerals Inc. Class A
 MNRO	Monro Inc.
-MNSB	Mainstreet Bank Va
+MNSB	MainStreet Bancshares Inc.
 MNTA	Momenta Pharmaceuticals Inc.
 MNTX	Manitex International Inc.
 MOAT	VanEck Vectors Morningstar Wide Moat
@@ -5316,6 +5326,7 @@ MRBK	Meridian Corporation
 MRC	MRC Global Inc.
 MRCC	Monroe Capital Corporation
 MRCY	Mercury Systems Inc
+MREO	Mereo BioPharma Group plc
 MRGR	ProShares Merger
 MRIN	Marin Software Incorporated
 MRKR	Marker Therapeutics Inc.
@@ -5597,7 +5608,6 @@ NLY-C	Annaly Capital Management Inc 7.625% Series C Cumulative Redeemable Prefer
 NLY-D	Annaly Capital Management Inc Preferred Series D
 NLY-F	Annaly Capital Management Inc 6.95% Series F
 NLY-G	Annaly Capital Management Inc 6.50% Series G Fixed-to-Floating Rate Cumulative Redeemable Preferred Stock
-NLY-H	Annaly Capital Management Inc 8.125% Series H Cumulative Redeemable Preferred Stock
 NM	Navios Maritime Holdings Inc.
 NM-G	Navios Maritime Holdings Inc. Sponsored ADR Representing 1/100th Perpetual Preferred Series G (Marshall Islands)
 NM-H	Navios Maritime Holdings Inc. Sponsored ADR Representing 1/100th Perp. Preferred Series H%
@@ -5659,6 +5669,7 @@ NRK	Nuveen New York AMT-Free Quality Municipal Income Fund
 NRO	Neuberger Berman Real Estate Securities Income Fund Inc.
 NRP	Natural Resource Partners LP Limited Partnership
 NRT	North European Oil Royality Trust
+NRUC	National Rural Utilities Cooperative Finance Corporation 5.500% Subordinated Notes due 2064 (Subordinated Deferrable Interest Notes)
 NRZ	New Residential Investment Corp.
 NS	Nustar Energy L.P.
 NS-A	Nustar Energy L.P. 8.50% Series A Fixed-to-Floating Rate Cumulative Redeemable Perpetual Preferred Units
@@ -5729,7 +5740,6 @@ NVGS	Navigator Holdings Ltd. (Marshall Islands)
 NVIV	InVivo Therapeutics Holdings Corp.
 NVLN	Novelion Therapeutics Inc.
 NVMI	Nova Measuring Instruments Ltd.
-NVMM	Novume Solutions Inc.
 NVO	Novo Nordisk A/S
 NVR	NVR Inc.
 NVRO	Nevro Corp.
@@ -5757,6 +5767,7 @@ NXQ	Nuveen Select Tax Free Income Portfolio II
 NXR	Nuveen Select Tax Free Income Portfolio III
 NXRT	NexPoint Residential Trust Inc.
 NXST	Nexstar Media Group Inc.
+NXTC	NextCure Inc.
 NXTD	NXT-ID Inc.
 NYCB	New York Community Bancorp Inc.
 NYCB-A	New York Community Bancorp Inc. Depositary shares Series A
@@ -5833,7 +5844,7 @@ OILK	ProShares K-1 Free Crude Oil Strategy
 OILU	ProShares UltraPro 3x Crude Oil
 OILX	ETRACS S&P GSCI Crude Oil Total Return Index ETN due February 22 2046
 OIS	Oil States International Inc.
-OKDCC	Eaton Vance Oaktree Diversified Credit NextShares
+OKDCC	Eaton Vance NextShares Trust II
 OKTA	Okta Inc.
 OLBK	Old Line Bancshares Inc.
 OLD	The Long-Term Care ETF
@@ -5845,7 +5856,6 @@ OLP	One Liberty Properties Inc.
 OMAB	Grupo Aeroportuario del Centro Norte S.A.B. de C.V.
 OMAD	One Madison Corporation Class A
 OMCL	Omnicell Inc.
-OMED	OncoMed Pharmaceuticals Inc.
 OMER	Omeros Corporation
 OMEX	Odyssey Marine Exploration Inc.
 OMF	OneMain Holdings Inc.
@@ -5950,7 +5960,7 @@ OXSQL	Oxford Square Capital Corp. 6.50% Notes due 2024
 OXSQZ	Oxford Square Capital Corp. 6.25% Notes due 2026
 OYLD	Oppenheimer Russell 1000 Yield Factor
 OZK	Bank OZK
-OZM	Och-Ziff Capital Management Group LLC Class A Shares representing Class A limited liability company interests
+OZM	Och-Ziff Capital Management Group LLC Class A
 PAA	Plains All American Pipeline L.P.
 PAAS	Pan American Silver Corp.
 PAC	Grupo Aeroportuario Del Pacifico S.A. B. de C.V. de C.V. (each representing 10 Series B shares)
@@ -5983,6 +5993,7 @@ PAVMW	PAVmed Inc. Warrant
 PAVMZ	PAVmed Inc. Series Z Warrant
 PAWZ	ProShares Pet Care
 PAYC	Paycom Software Inc.
+PAYS	Paysign Inc.
 PB	Prosperity Bancshares Inc.
 PBA	Pembina Pipeline Corp. (Canada)
 PBB	Prospect Capital Corporation 6.25% Notes due 2024
@@ -6159,6 +6170,7 @@ PILL	Direxion Daily Pharmaceutical & Medical Bull 3X Shares
 PIM	Putnam Master Intermediate Income Trust
 PIN	Invesco India
 PINC	Premier Inc.
+PINS	Pinterest Inc. Class A
 PIO	Invesco Global Water ETF
 PIR	Pier 1 Imports Inc.
 PIRS	Pieris Pharmaceuticals Inc.
@@ -6355,6 +6367,7 @@ PSMC	Invesco Conservative Multi-Asset Allocation
 PSMG	Invesco Growth Multi-Asset Allocation
 PSMM	Invesco Moderately Conservative Multi-Asset Allocation
 PSMT	PriceSmart Inc.
+PSN	Parsons Corporation
 PSO	Pearson Plc
 PSP	Invesco Global Listed Private Equity
 PSQ	ProShares Short QQQ
@@ -6373,6 +6386,7 @@ PTF	Invesco DWA Technology Momentum ETF
 PTGX	Protagonist Therapeutics Inc.
 PTH	Invesco DWA Healthcare Momentum ETF
 PTI	Proteostasis Therapeutics Inc.
+PTIN	Pacer Trendpilot International
 PTLA	Portola Pharmaceuticals Inc.
 PTLC	Pacer Fund Trust Trendpilot US Large Cap
 PTMC	Pacer Trendpilot US Mid Cap
@@ -6445,7 +6459,7 @@ QADA	QAD Inc.
 QADB	QAD Inc.
 QAI	IQ Hedge MultiIQ Hedge Multi-Strategy Tracker
 QARP	Xtrackers Russell 1000 US QARP
-QAT	iShares MSCI Qatar Capped ETF
+QAT	iShares MSCI Qatar ETF
 QBAK	Qualstar Corporation
 QCLN	First Trust NASDAQ Clean Edge Green Energy Index Fund
 QCRH	QCR Holdings Inc.
@@ -6486,7 +6500,7 @@ QRTEA	Qurate Retail Inc. Series A Common Stock
 QRTEB	Qurate Retail Inc. Series B Common Stock
 QSR	Restaurant Brands International Inc.
 QSY	WisdomTree U.S. Quality Shareholder Yield Fund
-QTEC	First Trust NASDAQ-100 Technology Sector Index Fd
+QTEC	First Trust NASDAQ-100- Technology Index Fund
 QTNA	Quantenna Communications Inc.
 QTNT	Quotient Limited
 QTRH	Quarterhill Inc.
@@ -6509,7 +6523,7 @@ QVM	Arrow QVM Equity Factor
 QWLD	SPDR MSCI World StrategicFactors
 QXGG	QuantX Risk Managed Growth ETF
 QXTR	QuantX Risk Managed Multi-Asset Total Return
-QYLD	Global X NASDAQ-100 Covered Call ETF
+QYLD	Recon Capital NASDAQ-100 Covered Call ETF
 R	Ryder System Inc.
 RA	Brookfield Real Assets Income Fund Inc.
 RAAX	VanEck Vectors Real Asset Allocation
@@ -6561,7 +6575,7 @@ RDS.A	Royal Dutch Shell PLC American Depositary Shares (Each representing two Cl
 RDS.B	Royal Dutch Shell PLC American Depositary Shares (Each representing two Class B)
 RDUS	Radius Health Inc.
 RDVT	Red Violet Inc.
-RDVY	First Trust NASDAQ Rising Dividend Achievers ETF
+RDVY	First Trust Rising Dividend Achievers ETF
 RDWR	Radware Ltd.
 RDY	Dr. Reddy's Laboratories Ltd
 RECN	Resources Connection Inc.
@@ -6576,6 +6590,7 @@ REGI	Renewable Energy Group Inc.
 REGL	ProShares S&P MidCap 400 Dividend Aristocrats
 REI	Ring Energy Inc.
 REK	ProShares Short Real Estate
+REKR	Rekor Systems Inc.
 RELL	Richardson Electronics Ltd.
 RELV	Reliv' International Inc.
 RELX	RELX PLC PLC American Depositary Shares (Each representing One)
@@ -6602,6 +6617,7 @@ REZ	iShares Trust Residential Real Estate
 REZI	Resideo Technologies Inc.
 RF-A	Regions Financial Corporation Depositary Shares Series A
 RF-B	Regions Financial Corporation Depositary Shares Series B
+RF-C	Regions Financial Corporation Depositary Shares Series C
 RFAP	First Trust RiverFront Dynamic Asia Pacific ETF
 RFCI	RiverFront Dynamic Core Income
 RFDA	RiverFront Dynamic US Dividend Advantage
@@ -6642,6 +6658,7 @@ RIGS	RiverFront Strategic Income Fund
 RILY	B. Riley Financial Inc.
 RILYG	B. Riley Financial Inc. 7.25% Senior Notes due 2027
 RILYL	B. Riley Financial Inc. 7.50% Senior Notes
+RILYO	B. Riley Financial Inc. 6.75% Senior Notes due 2024
 RILYZ	B. Riley Financial Inc. 7.50% Senior Notes Due 2027
 RINF	ProShares Inflation Expectations
 RING	iShares MSCI Global Gold Miners ETF
@@ -6697,7 +6714,7 @@ ROAD	Construction Partners Inc.
 ROAM	Hartford Multifactor Emerging Markets
 ROAN	Roan Resources Inc. Class A
 ROBO	Exchange Traded Concepts Trust ROBO Global Robotics and Automation Index
-ROBT	First Trust Nasdaq Artificial Intelligence and Robotics ETF
+ROBT	First Trust Nasdaq Artificial Intelligence and Rob
 ROCK	Gibraltar Industries Inc.
 RODI	Barclays Return on Disability ETN
 RODM	Hartford Multifactor Developed Markets (ex-US)
@@ -6719,12 +6736,14 @@ RP	RealPage Inc.
 RPAI	Retail Properties of America Inc. Class A
 RPD	Rapid7 Inc.
 RPG	Invesco S&P 500 Pure Growth
+RPLA	Replay Acquisition Corp.
 RPM	RPM International Inc.
 RPT	RPT Realty
 RPT-D	RPT Realty 7.25%
 RPUT	WisdomTree CBOE Russell 2000 PutWrite Strategy Fund
 RPV	Invesco S&P 500 Pure Value
 RQI	Cohen & Steers Quality Income Realty Fund Inc
+RRBI	Red River Bancshares Inc.
 RRD	R.R. Donnelley & Sons Company
 RRGB	Red Robin Gourmet Burgers Inc.
 RRR	Red Rock Resorts Inc.
@@ -6797,6 +6816,7 @@ RYF	Invesco S&P 500 Equal Weight Financial
 RYH	Invesco S&P 500 Equal Weight Health Care
 RYI	Ryerson Holding Corporation
 RYJ	Invesco Raymond James SB-1 Equity
+RYLD	Global X Russell 2000 Covered Call
 RYN	Rayonier Inc. REIT
 RYT	Invesco S&P 500 Equal Weight Technology
 RYTM	Rhythm Pharmaceuticals Inc.
@@ -6919,6 +6939,7 @@ SCOM	ProShares UltraPro Short Communication Services Select Sector
 SCON	Superconductor Technologies Inc.
 SCOR	comScore Inc.
 SCPH	scPharmaceuticals Inc.
+SCPL	SciPlay Corporation
 SCS	Steelcase Inc.
 SCSC	ScanSource Inc.
 SCTO	Global X JPMorgan US Sector Rotator Index
@@ -6960,6 +6981,7 @@ SEED	Origin Agritech Limited
 SEEL	Seelos Therapeutics Inc.
 SEF	ProShares Short Financials
 SEIC	SEI Investments Company
+SEIX	Virtus Seix Senior Loan
 SELB	Selecta Biosciences Inc.
 SELF	Global Self Storage Inc.
 SEM	Select Medical Holdings Corporation
@@ -6989,6 +7011,7 @@ SFS	Smart & Final Stores Inc.
 SFST	Southern First Bancshares Inc.
 SFUN	Fang Holdings Limited American Depositary Shares (Each representing Four Class A HK$1.00 par value)
 SFY	SoFi Select 500
+SFYF	SoFi 50
 SFYX	SoFi Next 500
 SG	Sirius International Insurance Group Ltd.
 SGA	Saga Communications Inc.
@@ -7020,6 +7043,8 @@ SHG	Shinhan Financial Group Co Ltd American Depositary Shares
 SHI	SINOPEC Shangai Petrochemical Company Ltd.
 SHIP	Seanergy Maritime Holdings Corp
 SHIPW	Seanergy Maritime Holdings Corp Class A Warrants
+SHIPZ	Seanergy Maritime Holdings Corp - Warrants - Class B (09/05/2022)
+SHLL	Tortoise Acquisition Corp. Class A
 SHLO	Shiloh Industries Inc.
 SHLX	Shell Midstream Partners L.P. representing Limited Partner Interests
 SHM	SPDR Nuveen Bloomberg Barclays Short Term Municipal Bond
@@ -7099,7 +7124,7 @@ SLM	SLM Corporation
 SLMBP	SLM Corporation Floating Rate Non-Cumulative Preferred Stock Series B
 SLNO	Soleno Therapeutics Inc.
 SLP	Simulations Plus Inc.
-SLQD	iShares 0-5 Year Investment Grade Corporate Bond ETF
+SLQD	iShares 0-5 Year Investment Grade Corporate Bond E
 SLRC	Solar Capital Ltd.
 SLS	SELLAS Life Sciences Group Inc.
 SLT	Salt High truBeta US Market
@@ -7182,6 +7207,7 @@ SOGO	Sogou Inc. American Depositary Shares each representing one Class A
 SOHO	Sotherly Hotels Inc.
 SOHOB	Sotherly Hotels Inc. 8.0% Series B Cumulative Redeemable Perpetual Preferred Stock
 SOHOK	Sotherly Hotels LP 7.25% Senior Unsecured Notes Due 2021
+SOHON	Sotherly Hotels Inc. 8.25% Series D Cumulative Redeemable Perpetual Preferred Stock
 SOHOO	Sotherly Hotels Inc. 7.875% Series C Cumulative Redeemable Perpetual Preferred Stock
 SOHU	Sohu.com Limited
 SOI	Solaris Oilfield Infrastructure Inc. Class A
@@ -7194,6 +7220,7 @@ SOLOW	Electrameccanica Vehicles Corp. Ltd. Warrants
 SOLY	Soliton Inc.
 SON	Sonoco Products Company
 SONA	Southern National Bancorp of Virginia Inc.
+SONM	Sonim Technologies Inc - Ordinary Shares
 SONO	Sonos Inc.
 SOR	Source Capital Inc.
 SORL	SORL Auto Parts Inc.
@@ -7216,6 +7243,7 @@ SPE-B	Special Opportunities Fund Inc. 3.50% Convertible Preferred Stock Series B
 SPEM	SPDR Index Shares Fund Portfolio Emerging Markets
 SPEX	Spherix Incorporated
 SPFF	Global X SuperIncome Preferred
+SPFI	South Plains Financial Inc.
 SPG-J	Simon Property Group Inc. Group 8 3/8% Series J Cumulative Redeemable Preferred Stock
 SPH	Suburban Propane Partners L.P.
 SPHB	Invesco S&P 500 High Beta
@@ -7330,7 +7358,6 @@ SSW-G	Seaspan Corporation 8.20% Cumulative Redeemable Perpetual Preferred Shares
 SSW-H	Seaspan Corporation 7.875% Cumulative Redeemable Perpetual Preferred Shares - Series H
 SSW-I	Seaspan Corporation Series I Fixed-to-Floating Rate Cumulative Redeemable Perpetual Preferred Shares
 SSWA	Seaspan Corporation 7.125% Notes due 2027
-SSWN	Seaspan Corporation 6.375% Notes due 2019
 SSY	SunLink Health Systems Inc.
 SSYS	Stratasys Ltd.
 ST	Sensata Technologies Holding plc
@@ -7401,7 +7428,8 @@ SURF	Surface Oncology Inc.
 SUSA	iShares MSCI USA ESG Select
 SUSB	iShares ESG 1-5 Year USD Corporate Bond ETF
 SUSC	iShares ESG USD Corporate Bond ETF
-SUZ	Suzano Papel e Celulose S.A. American Depositary Shares (each representing two)
+SUSL	iShares ESG MSCI USA Leaders ETF
+SUZ	Suzano S.A. American Depositary Shares (each representing two)
 SVA	Sinovac Biotech Ltd.
 SVBI	Severn Bancorp Inc
 SVM	Silvercorp Metals Inc.
@@ -7426,7 +7454,8 @@ SXCP	SunCoke Energy Partners L.P. Representing Limited partner Interests
 SXI	Standex International Corporation
 SXT	Sensient Technologies Corporation
 SXTC	China SXT Pharmaceuticals Inc.
-SYBT	SPDR Barclays US Treasury Bond UCITS ETF
+SY	So-Young International Inc.
+SYBT	Stock Yards Bancorp Inc.
 SYBX	Synlogic Inc.
 SYE	SPDR MFS Systematic Core Equity
 SYG	SPDR MFS Systematic Growth Equity
@@ -7604,7 +7633,6 @@ TIP	iShares TIPS Bond
 TIPT	Tiptree Inc.
 TIPX	SPDR Bloomberg Barclays 1-10 Year TIPS
 TIPZ	PIMCO Broad U.S. TIPS Index Exchange-Traded Fund
-TISA	Top Image Systems Ltd.
 TISI	Team Inc.
 TITN	Titan Machinery Inc.
 TIVO	TiVo Corporation
@@ -7638,6 +7666,7 @@ TMCX	Trinity Merger Corp.
 TMCXU	Trinity Merger Corp. Unit
 TMCXW	Trinity Merger Corp. Warrant
 TMDI	Titan Medical Inc.
+TMDX	TransMedics Group Inc.
 TME	Tencent Music Entertainment Group American Depositary Shares each representing two Class A
 TMF	Direxion Daily 20-Yr Treasury Bull 3x Shrs
 TMFC	Motley Fool 100 Index ETF
@@ -7686,10 +7715,11 @@ TPC	Tutor Perini Corporation
 TPCO	Tribune Publishing Company
 TPGH	TPG Pace Holdings Corp. Class A
 TPH	TRI Pointe Group Inc.
+TPHD	Timothy Plan High Dividend Stock
 TPHS	Trinity Place Holdings Inc.
 TPIC	TPI Composites Inc.
 TPL	Texas Pacific Land Trust
-TPNL	3PEA International Inc.
+TPLC	Timothy Plan US Large Cap Core
 TPOR	Direxion Daily Transportation Bull 3X Shares
 TPRE	Third Point Reinsurance Ltd.
 TPTX	Turning Point Therapeutics Inc.
@@ -7718,12 +7748,14 @@ TRMD	TORM plc
 TRMK	Trustmark Corporation
 TRMT	Tremont Mortgage Trust
 TRN	Trinity Industries Inc.
+TRND	Pacer Trendpilot Fund of Funds
+TRNE	Trine Acquisition Corp. Class A
 TRNO	Terreno Realty Corporation
 TRNS	Transcat Inc.
 TRNX	Taronis Technologies Inc.
 TROV	TrovaGene Inc.
 TROX	Tronox Holdings plc (UK)
-TRP	TransCanada Corporation
+TRP	TC Energy Corporation
 TRPX	Therapix Biosciences Ltd.
 TRQ	Turquoise Hill Resources Ltd.
 TRS	TriMas Corporation
@@ -7737,9 +7769,10 @@ TRU	TransUnion
 TRUE	TrueCar Inc.
 TRUP	Trupanion Inc.
 TRVG	trivago N.V.
+TRVI	Trevi Therapeutics Inc.
 TRVN	Trevena Inc.
 TRWH	Twin River Worldwide Holdings Inc.
-TRX	Tanzanian Royalty Exploration Corporation
+TRX	Tanzanian Gold Corporation
 TRXC	TransEnterix Inc.
 TS	Tenaris S.A. American Depositary Shares
 TSBK	Timberland Bancorp Inc.
@@ -7824,7 +7857,7 @@ TZAC	Tenzing Acquisition Corp.
 TZACU	Tenzing Acquisition Corp. Units
 TZACW	Tenzing Acquisition Corp. Warrants
 TZOO	Travelzoo
-UAE	iShares MSCI UAE Capped ETF
+UAE	iShares MSCI UAE ETF
 UAG	E-TRACS USB Bloomberg Commodity Index Exchange Traded Notes UBS Bloomberg CMCI Agriculture ETN
 UAMY	United States Antimony Corporation
 UAN	CVR Partners LP representing Limited Partner Interests
@@ -7833,6 +7866,7 @@ UAUD	ETNs linked to the VelocityShares Daily 4X Long AUD vs. USD Index
 UAVS	AgEagle Aerial Systems Inc.
 UBA	Urstadt Biddle Properties Inc.
 UBCP	United Bancorp Inc.
+UBER	Uber Technologies Inc.
 UBFO	United Security Bancshares
 UBG	E-TRACS USB Bloomberg Commodity Index Exchange Traded Notes UBS Bloomberg CMCI Gold ETN
 UBIO	Proshares UltraPro Nasdaq Biotechnology
@@ -7899,7 +7933,6 @@ ULBR	Citigroup Global Markets Holdings Inc VelocityShares Long LIBOR ETN
 ULE	ProShares Ultra Euro
 ULH	Universal Logistics Holdings Inc.
 ULST	SPDR SSgA Ultra Short Term Bond
-ULTI	The Ultimate Software Group Inc.
 ULVM	USAA MSCI USA Value Momentum Blend Index
 UMBF	UMB Financial Corporation
 UMC	United Microelectronics Corporation (NEW)
@@ -7965,8 +7998,8 @@ USEG	U.S. Energy Corp.
 USEQ	Invesco Russell 1000 Enhanced Equal Weight
 USFD	US Foods Holding Corp.
 USFR	WisdomTree Floating Rate Treasury Fund
-USG	USG Corporation
 USHY	iShares Broad USD High Yield Corporate Bond
+USI	Principal Ultra-Short Active Income
 USIG	iShares Broad USD Investment Grade Corporate Bond ETF
 USL	United States 12 Month Oil
 USLB	Invesco Russell 1000 Low Beta Equal Weight ETF
@@ -8065,6 +8098,7 @@ VERU	Veru Inc.
 VET	Vermilion Energy Inc. Common (Canada)
 VETS	Pacer Military Times Best Employers ETF
 VEU	Vanguard FTSE All World Ex US
+VFC#	V.F. Corporation Ex-Distribution When Issued
 VFF	Village Farms International Inc.
 VFH	Vanguard Financials
 VFL	Delaware Investments National Municipal Income Fund
@@ -8079,7 +8113,7 @@ VGFO	Virtus WMC Global Factor Opportunities
 VGI	Virtus Global Multi-Sector Income Fund of Beneficial Interest
 VGIT	Vanguard Intermediate-Term Treasury ETF
 VGK	Vanguard FTSEEuropean
-VGLT	Vanguard Long-Treasury ETF
+VGLT	Vanguard Long-Term Government Bond ETF
 VGM	Invesco Trust for Investment Grade Municipals (DE)
 VGR	Vector Group Ltd.
 VGSH	Vanguard Short-Term Treasury ETF
@@ -8149,9 +8183,9 @@ VO	Vanguard Mid-Cap
 VOC	VOC Energy Trust Units of Beneficial Interest
 VOD	Vodafone Group Plc
 VOE	Vanguard Mid-Cap Value
-VONE	Vanguard Russell 1000 Index Fund
+VONE	Vanguard Russell 1000 ETF
 VONG	Vanguard Russell 1000 Growth ETF
-VONV	Vanguard Russell 1000 Value Index Fund
+VONV	Vanguard Russell 1000 Value ETF
 VOO	Vanguard S&P 500
 VOOG	Vanguard S&P 500 Growth
 VOOV	Vanguard S&P 500 Value
@@ -8170,7 +8204,7 @@ VRAI	Virtus Real Asset Income
 VRAY	ViewRay Inc.
 VRCA	Verrica Pharmaceuticals Inc.
 VREX	Varex Imaging Corporation
-VRIG	Invesco Variable Rate Investment Grade ETF
+VRIG	PowerShares Variable Rate Investment Grade Portfol
 VRML	Vermillion Inc.
 VRNA	Verona Pharma plc
 VRNS	Varonis Systems Inc.
@@ -8198,12 +8232,12 @@ VSTM	Verastem Inc.
 VSTO	Vista Outdoor Inc.
 VT	Vanguard Total World Stock Index
 VTA	Invesco Credit Opportunities Fund of Beneficial Interest
-VTC	Vanguard Total Corporate Bond ETF
+VTC	Vanguard Total Corporate ETF
 VTEB	Vanguard Tax-Exempt Bond
 VTGN	VistaGen Therapeutics Inc.
 VTHR	Vanguard Russell 3000 ETF
 VTI	Vanguard Total Stock Market
-VTIP	Vanguard Short-Term Inflation-Protected Securities Index Fund
+VTIP	Vanguard Short-Term Inflation-Protected Securities
 VTIQ	VectoIQ Acquisition Corp.
 VTIQU	VectoIQ Acquisition Corp. Unit
 VTIQW	VectoIQ Acquisition Corp. Warrant
@@ -8212,7 +8246,7 @@ VTNR	Vertex Energy Inc
 VTSI	VirTra Inc.
 VTV	Vanguard Value
 VTVT	vTv Therapeutics Inc.
-VTWG	Vanguard Russell 2000 Growth Index Fund
+VTWG	Vanguard Russell 2000 Growth ETF
 VTWO	Vanguard Russell 2000 ETF
 VTWV	Vanguard Russell 2000 Value ETF
 VUG	Vanguard Growth
@@ -8228,9 +8262,9 @@ VWO	Vanguard FTSE Emerging Markets
 VWOB	Vanguard Emerging Markets Government Bond ETF
 VXF	Vanguard Extended Market
 VXRT	Vaxart Inc.
-VXUS	Vanguard Total International Stock
-VXXB	iPath Series B S&P 500 VIX Short-Term Futures ETN
-VXZB	iPath Series B S&P 500 VIX Mid-Term Futures ETN
+VXUS	Vanguard Total International Stock ETF
+VXX	iPath Series B S&P 500 VIX Short-Term Futures ETN
+VXZ	iPath Series B S&P 500 VIX Mid-Term Futures ETN
 VYGR	Voyager Therapeutics Inc.
 VYM	Vanguard High Dividend Yield
 VYMI	Vanguard International High Dividend Yield ETF
@@ -8239,6 +8273,7 @@ WAAS	AquaVenture Holdings Limited
 WAB	Westinghouse Air Brake Technologies Corporation
 WABC	Westamerica Bancorporation
 WAFD	Washington Federal Inc.
+WAFU	Wah Fu Education Group Limited
 WAGE	WageWorks Inc.
 WAIR	Wesco Aircraft Holdings Inc.
 WAL	Western Alliance Bancorporation (DE)
@@ -8313,7 +8348,6 @@ WHLM	Wilhelmina International Inc.
 WHLR	Wheeler Real Estate Investment Trust Inc.
 WHLRD	Wheeler Real Estate Investment Trust Inc. Series D Cumulative Preferred Stock
 WHLRP	Wheeler Real Estate Investment Trust Inc. Series B Preferred Stock
-WHLRW	Wheeler Real Estate Investment Trust Inc. Warrants
 WIA	Western Asset Inflation-Linked Income Fund
 WIFI	Boingo Wireless Inc.
 WIL	Barclays PLC Women in Leadership ETN
@@ -8395,15 +8429,16 @@ WTMF	WisdomTree Managed Futures Strategy Fund
 WTR	Aqua America Inc.
 WTRE	Watford Holdings Ltd.
 WTRH	Waitr Holdings Inc.
+WTRU	Aqua America Inc. 6.00% Tangible Equity Units
 WTS	Watts Water Technologies Inc. Class A
 WTT	Wireless Telecom Group Inc.
 WTTR	Select Energy Services Inc. Class A
-WTW	Weight Watchers International Inc
 WUBA	58.com Inc. American Depositary Shares each representing 2 Class A
 WVE	Wave Life Sciences Ltd.
 WVFC	WVS Financial Corp.
 WVVI	Willamette Valley Vineyards Inc.
 WVVIP	Willamette Valley Vineyards Inc. Series A Redeemable Preferred Stock
+WW	Weight Watchers International Inc
 WWD	Woodward Inc.
 WWE	World Wrestling Entertainment Inc. Class A
 WWR	Westwater Resources Inc.
@@ -8500,6 +8535,7 @@ XXII	22nd Century Group Inc.
 XYF	X Financial American Depositary Shares each representing two Class A
 Y	Alleghany Corporation
 YANG	Direxion Daily FTSE China Bear 3x Shares
+YCBD	cbdMD Inc.
 YCL	ProShares Ultra Yen
 YCOM	ProShares UltraShort Communication Services Select Sector
 YCS	ProShares UltraShort Yen New
@@ -8511,14 +8547,16 @@ YGYI	Youngevity International Inc.
 YI	111 Inc.
 YIN	Yintech Investment Holdings Limited
 YINN	Direxion Daily FTSE China Bull 3x Shares
+YJ	Yunji Inc.
 YLCO	Global X YieldCo & Renewable Energy Income ETF
-YLD	Principal Exchange-Traded Funds EDGE Active Income
+YLD	Principal Active Income
 YLDE	ClearBridge Dividend Strategy ESG ETF
 YMAB	Y-mAbs Therapeutics Inc.
 YMLI	VanEck Vectors High Income Infrastructure MLP
 YMLP	VanEck Vectors High Income MLP
 YNDX	Yandex N.V.
 YOGA	YogaWorks Inc.
+YOLO	AdvisorShares Pure Cannabis
 YORW	The York Water Company
 YPF	YPF Sociedad Anonima
 YRCW	YRC Worldwide Inc.
@@ -8562,6 +8600,7 @@ ZIXI	Zix Corporation
 ZJPN	SPDR Solactive Japan
 ZKIN	ZK International Group Co. Ltd
 ZLAB	Zai Lab Limited
+ZM	Zoom Video Communications Inc.
 ZMLP	Direxion Zacks MLP High Income Index Shares
 ZN	Zion Oil & Gas Inc
 ZNGA	Zynga Inc.

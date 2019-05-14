@@ -76,6 +76,7 @@
     <string name="latest_price">Latest</string>
     <string name="extended_price">After Hours</string>
     <string name="previous_close">Previous Close</string>
+    <string name="market_cap">Market Cap</string>
     <string name="day_range">Day\'s Range</string>
     <string name="week_52_range">52-week Range</string>
 
