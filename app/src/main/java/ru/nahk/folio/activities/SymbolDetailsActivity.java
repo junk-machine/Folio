@@ -392,7 +392,7 @@ public class SymbolDetailsActivity
                 mCompanyNameView.setText(symbolEntity.displayName);
             }
 
-            if (CalendarHelper.compare(symbolEntity.extendedTime, symbolEntity.latestTime) >= 0) {
+            if (CalendarHelper.compare(symbolEntity.extendedTime, symbolEntity.latestTime) > 0) {
                 // If extended trading is happening, then replace latest price with close price
                 // and extended price
                 mLatestPriceTile.setVisibility(View.GONE);
