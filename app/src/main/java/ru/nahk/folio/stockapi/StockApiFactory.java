@@ -22,7 +22,7 @@ public final class StockApiFactory {
         if (apiInstance == null) {
             synchronized (initializationSyncObj) {
                 if (apiInstance == null) {
-                    apiInstance = new IexStockApi();
+                    apiInstance = new YahooFinanceApi();
                 }
             }
         }

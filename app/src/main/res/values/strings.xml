@@ -6,7 +6,7 @@
     <string name="portfolio_item_widget_configuration_title">Select Item for Widget</string>
 
     <string name="app_version">version %s</string>
-    <string name="data_source_attribution">Data provided for free by &lt;a href=\'https://iextrading.com/developer\'>IEX&lt;/a>. View &lt;a href=\'https://iextrading.com/api-exhibit-a/\'>IEX\'s Terms of Use&lt;/a>.</string>
+    <string name="data_source_attribution" />
 
     <string name="root_group_name">Folio</string>
 

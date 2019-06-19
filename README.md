@@ -16,6 +16,4 @@ Most of the actions are based on gestures:
  - Press and hold, then drag to delete
  - Swipe down to refresh
 
-Data provided for free by [IEX](https://iextrading.com/developer). View [IEX's Terms of Use](https://iextrading.com/api-exhibit-a/).
-
 Happy coding!

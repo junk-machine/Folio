@@ -49,7 +49,22 @@ public final class CalendarHelper {
     }
 
     /**
-     * Converts epoch timestamp to {@link Calendar} instance.
+     * Creates {@link Calendar} from date and time components.
+     * @param year Year.
+     * @param month Month.
+     * @param date Date.
+     * @param hour Hour.
+     * @param minute Minute.
+     * @return {@link Calendar} instance representing specified date and time.
+     */
+    public static Calendar fromComponents(int year, int month, int date, int hour, int minute) {
+        Calendar result = Calendar.getInstance(UTC_TIMEZONE);
+        result.set(year, month, date, hour, minute);
+        return result;
+    }
+
+    /**
+     * Converts epoch timestamp in milliseconds to {@link Calendar} instance.
      * @param epoch Epoch time in milliseconds.
      * @return {@link Calendar} instance for the given epoch timestamp.
      */
@@ -57,6 +72,15 @@ public final class CalendarHelper {
         Calendar result = Calendar.getInstance(UTC_TIMEZONE);
         result.setTimeInMillis(epoch);
         return result;
+    }
+
+    /**
+     * Converts epoch timestamp in seconds to {@link Calendar} instance.
+     * @param epoch Epoch time in seconds.
+     * @return {@link Calendar} instance for the given epoch timestamp.
+     */
+    public static Calendar fromEpochInSeconds(long epoch) {
+        return fromEpochInMillis(epoch * 1000);
     }
 
     /**
