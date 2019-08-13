@@ -221,6 +221,10 @@ public abstract class PortfolioDatabase extends RoomDatabase {
             result[1] = BigDecimalHelper.add(result[1], childPosition.baseValue);
         }
 
+        if (!group.children.isEmpty()) {
+            group.children.get(group.children.size() - 1).lastInParent = true;
+        }
+
         return result;
     }
 }

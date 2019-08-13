@@ -7,7 +7,7 @@
     android:paddingEnd="@dimen/list_item_content_padding_horizontal"
     android:background="@drawable/list_item_bg">
 
-    <View
+    <ru.nahk.folio.controls.RoundRect
         android:id="@+id/lot_stripe"
         android:layout_width="@dimen/level_stripe_width"
         android:layout_height="match_parent"

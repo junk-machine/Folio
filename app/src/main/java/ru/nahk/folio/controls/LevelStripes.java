@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Path;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.view.ViewCompat;
@@ -12,6 +13,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import ru.nahk.folio.R;
+import ru.nahk.folio.model.GroupViewModel;
 import ru.nahk.folio.model.PositionsListItemViewModel;
 
 /**
@@ -64,6 +66,26 @@ public class LevelStripes extends View {
     private PositionsListItemViewModel mPositionsListItem;
 
     /**
+     * Group list item to display level stripes for, if it is a group, otherwise {@code null}.
+     */
+    private GroupViewModel mGroupItem;
+
+    /**
+     * Pre-allocated {@link Path} for stripe rectangle rendering.
+     */
+    private Path mRectangle;
+
+    /**
+     * Pre-allocated array of corner radius values for rendering.
+     */
+    private float[] mRectangleCorners;
+
+    /**
+     * Corner radius for stripe rectangle.
+     */
+    private float mCornerRadius;
+
+    /**
      * Creates new instance of the {@link LevelStripes} class
      * with the provided context.
      * @param context Parent activity context.
@@ -86,7 +108,7 @@ public class LevelStripes extends View {
 
     /**
      * Creates new instance of the {@link LevelStripes} class
-     * with the provided context and XML attributes.
+     * with the provided context, XML attributes and default style.
      * @param context Parent activity context.
      * @param attrs XML attributes.
      * @param defStyleAttr Default style attributes.
@@ -103,6 +125,10 @@ public class LevelStripes extends View {
     public void setPositionsListItem(PositionsListItemViewModel positionsListItem) {
         if (positionsListItem != this.mPositionsListItem) {
             this.mPositionsListItem = positionsListItem;
+            this.mGroupItem =
+                positionsListItem instanceof GroupViewModel
+                    ? (GroupViewModel)positionsListItem
+                    : null;
 
             invalidate();
             requestLayout();
@@ -119,6 +145,8 @@ public class LevelStripes extends View {
         mPositiveChangePaint = new Paint();
         mIsRightToLeft =
             ViewCompat.getLayoutDirection(this) == ViewCompat.LAYOUT_DIRECTION_RTL;
+        mRectangle = new Path();
+        mRectangleCorners = new float[8];
     }
 
     /**
@@ -193,9 +221,11 @@ public class LevelStripes extends View {
         w -= Math.max(mPositionsListItem.level - 1, 0) * mStripeMargin;
 
         mActualStripeWidth =
-            mPositionsListItem != null && mPositionsListItem.level > 0
+            mPositionsListItem.level > 0
                 ? Math.max((float) w / mPositionsListItem.level, 0)
                 : 0;
+
+        mCornerRadius = mActualStripeWidth / 2;
 
         mIsRightToLeft =
             ViewCompat.getLayoutDirection(this) == ViewCompat.LAYOUT_DIRECTION_RTL;
@@ -238,12 +268,29 @@ public class LevelStripes extends View {
         super.onDraw(canvas);
 
         float top = getPaddingTop();
-        float bottom = getPaddingTop() + mActualStripeHeight;
+        float bottomPadded = getPaddingTop() + mActualStripeHeight;
+
+        // Bottom of the stripe, if need to render a full height stripe
+        float bottomFull = bottomPadded + getPaddingBottom();
 
         // We draw stripes from inside-out
         float end = mIsRightToLeft ? getPaddingEnd() : getWidth() - getPaddingEnd();
 
         PositionsListItemViewModel currentItem = mPositionsListItem;
+
+        // If rendering first stripe
+        boolean isSelf = true;
+
+        // Determine if stripe for current item needs bottom padding
+        boolean needsBottomPadding =
+            mGroupItem == null // when it is not a group
+            || !mGroupItem.isExpanded // or collapsed group
+            || mGroupItem.children.isEmpty(); // or group with no children
+
+        // Round top corners for the first stripe (self)
+        mRectangleCorners[0] = mRectangleCorners[1] =
+            mRectangleCorners[2] = mRectangleCorners[3] =
+                mCornerRadius;
 
         while (currentItem != null && currentItem.level > 0) {
             int valueChangeDirection =
@@ -251,9 +298,24 @@ public class LevelStripes extends View {
                     ? currentItem.currentValue.compareTo(currentItem.baseValue)
                     : 0;
 
-            canvas.drawRect(
-                mIsRightToLeft ? end : end - mActualStripeWidth, top,
-                mIsRightToLeft ? end + mActualStripeWidth : end, bottom,
+            if (needsBottomPadding) {
+                // Round bottom corners, if adding padding
+                mRectangleCorners[4] = mRectangleCorners[5]=
+                    mRectangleCorners[6] = mRectangleCorners[7] =
+                        mCornerRadius;
+            }
+
+            mRectangle.reset();
+            mRectangle.addRoundRect(
+                mIsRightToLeft ? end : end - mActualStripeWidth,
+                isSelf ? top : 0, // Do not need top padding when rendering parents
+                mIsRightToLeft ? end + mActualStripeWidth : end,
+                needsBottomPadding ? bottomPadded : bottomFull,
+                mRectangleCorners,
+                Path.Direction.CW);
+
+            canvas.drawPath(
+                mRectangle,
                 valueChangeDirection < 0
                     ? mNegativeChangePaint
                     : (valueChangeDirection > 0
@@ -266,7 +328,13 @@ public class LevelStripes extends View {
                 end -= mActualStripeWidth + mStripeMargin;
             }
 
+            needsBottomPadding &= currentItem.lastInParent;
             currentItem = currentItem.parent;
+            isSelf = false;
+
+            // Reset rounded corners
+            mRectangleCorners[0] = mRectangleCorners[1] = mRectangleCorners[2] = mRectangleCorners[3] =
+                mRectangleCorners[4] = mRectangleCorners[5] = mRectangleCorners[6] = mRectangleCorners[7] = 0f;
         }
     }
 }

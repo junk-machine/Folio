@@ -27,6 +27,12 @@ public abstract class PositionsListItemViewModel extends PortfolioItemViewModel 
     public GroupViewModel parent;
 
     /**
+     * Flag that indicates whether this item is last in its parent.
+     */
+    @Ignore
+    public boolean lastInParent;
+
+    /**
      * Get the name of the item.
      * @return Name of the item
      */

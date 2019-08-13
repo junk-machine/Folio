@@ -11,8 +11,8 @@
     <dimen name="list_item_content_padding_horizontal">5dp</dimen>
 
     <dimen name="level_stripe_width">4dp</dimen>
-    <dimen name="level_stripe_margin">3dp</dimen>
-    <dimen name="stripes_control_margin_vertical">1.5dp</dimen>
+    <dimen name="level_stripe_margin">3.5dp</dimen>
+    <dimen name="stripes_control_margin_vertical">2.5dp</dimen>
     <dimen name="stripes_control_margin_start">@dimen/level_stripe_margin</dimen>
 
     <dimen name="group_state_icon_margin">3dp</dimen>
