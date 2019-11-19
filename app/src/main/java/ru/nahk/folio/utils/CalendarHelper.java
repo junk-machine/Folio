@@ -96,7 +96,9 @@ public final class CalendarHelper {
         Calendar result = Calendar.getInstance(UTC_TIMEZONE);
 
         try {
-            result.setTime(DateFormat.getDateInstance(DateFormat.SHORT).parse(date));
+            DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.SHORT);
+            dateFormat.setTimeZone(UTC_TIMEZONE);
+            result.setTime(dateFormat.parse(date));
         } catch (ParseException parseException) {
             return null;
         }
@@ -121,6 +123,7 @@ public final class CalendarHelper {
      */
     public static String toString(Calendar date, int style) {
         DateFormat dateFormat = DateFormat.getDateInstance(style);
+        dateFormat.setTimeZone(UTC_TIMEZONE);
         return dateFormat.format(date.getTime());
     }
 
