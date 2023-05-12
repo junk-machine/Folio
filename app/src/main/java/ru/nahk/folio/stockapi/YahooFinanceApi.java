@@ -29,7 +29,7 @@ public class YahooFinanceApi extends StockApiBase {
      * URI template to query latest symbols information.
      */
     private final static String QUOTE_API_URL =
-        "https://query2.finance.yahoo.com/v7/finance/quote?symbols=%s&fields=symbol,shortName,regularMarketOpen,regularMarketPrice,regularMarketTime,postMarketPrice,postMarketTime,regularMarketPreviousClose,marketCap,regularMarketDayHigh,regularMarketDayLow,fiftyTwoWeekHigh,fiftyTwoWeekLow";
+        "https://query2.finance.yahoo.com/v6/finance/quote?symbols=%s&fields=symbol,shortName,regularMarketOpen,regularMarketPrice,regularMarketTime,postMarketPrice,postMarketTime,regularMarketPreviousClose,marketCap,regularMarketDayHigh,regularMarketDayLow,fiftyTwoWeekHigh,fiftyTwoWeekLow";
 
     /**
      * Updates symbols information in-place.
