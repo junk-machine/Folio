@@ -22,7 +22,8 @@
             android:name=".activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,7 +35,8 @@
             android:name=".activities.AboutActivity"
             android:label="@string/action_about_app"
             android:parentActivityName=".activities.MainActivity"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
@@ -43,7 +45,8 @@
         <activity
             android:name=".activities.LotsListActivity"
             android:parentActivityName=".activities.MainActivity"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
@@ -52,7 +55,8 @@
         <activity
             android:name=".activities.EditLotActivity"
             android:parentActivityName=".activities.LotsListActivity"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.LotsListActivity" />
@@ -61,7 +65,8 @@
         <activity
             android:name=".activities.SymbolDetailsActivity"
             android:parentActivityName=".activities.LotsListActivity"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.LotsListActivity" />
@@ -69,7 +74,8 @@
 
         <activity
             android:name=".activities.PortfolioItemWidgetConfigureActivity"
-            android:label="@string/portfolio_item_widget_configuration_title">
+            android:label="@string/portfolio_item_widget_configuration_title"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
             </intent-filter>
@@ -77,7 +83,8 @@
 
         <receiver
             android:name=".widgets.PortfolioItemWidgetProvider"
-            android:label="@string/portfolio_item_widget_name">
+            android:label="@string/portfolio_item_widget_name"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -89,11 +96,13 @@
 
         <service
             android:name=".widgets.PortfolioItemWidgetUpdateJob"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
 
         <service
             android:name=".widgets.PortfolioItemWidgetDeleteJob"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
     </application>
 
 </manifest>

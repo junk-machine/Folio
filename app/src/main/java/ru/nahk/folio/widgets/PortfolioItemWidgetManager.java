@@ -140,7 +140,7 @@ public final class PortfolioItemWidgetManager {
                     (int) group.id,
                     new Intent(context, MainActivity.class)
                         .setAction(NAVIGATE_TO_GROUP),
-                    0));
+                    PendingIntent.FLAG_IMMUTABLE));
         } else {
             view.setOnClickPendingIntent(R.id.widget_layout_root, null);
         }
@@ -171,7 +171,7 @@ public final class PortfolioItemWidgetManager {
                         .setAction(position.quantity > 0 ? NAVIGATE_TO_POSITION : NAVIGATE_TO_SYMBOL_DETAILS)
                         .putExtra(ActivityNavigationConstants.POSITION_ID_KEY, position.id)
                         .putExtra(ActivityNavigationConstants.STOCK_SYMBOL_KEY, position.symbol),
-                    0));
+                    PendingIntent.FLAG_IMMUTABLE));
 
             if (TextUtils.isEmpty(position.name)) {
                 // For positions show symbol, if company name was not loaded
